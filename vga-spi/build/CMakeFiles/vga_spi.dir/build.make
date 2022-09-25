@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Pico/vga-spi
+CMAKE_SOURCE_DIR = /home/thomas/PiPico/vga-spi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Pico/vga-spi/build
+CMAKE_BINARY_DIR = /home/thomas/PiPico/vga-spi/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/vga_spi.dir/depend.make
@@ -59,667 +59,667 @@ include CMakeFiles/vga_spi.dir/flags.make
 
 CMakeFiles/vga_spi.dir/vga_spi.c.obj: CMakeFiles/vga_spi.dir/flags.make
 CMakeFiles/vga_spi.dir/vga_spi.c.obj: ../vga_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/vga_spi.dir/vga_spi.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/vga_spi.c.obj   -c /home/thomas/Pico/vga-spi/vga_spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/vga_spi.dir/vga_spi.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/vga_spi.c.obj   -c /home/thomas/PiPico/vga-spi/vga_spi.c
 
 CMakeFiles/vga_spi.dir/vga_spi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/vga_spi.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/vga-spi/vga_spi.c > CMakeFiles/vga_spi.dir/vga_spi.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/vga-spi/vga_spi.c > CMakeFiles/vga_spi.dir/vga_spi.c.i
 
 CMakeFiles/vga_spi.dir/vga_spi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/vga_spi.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/vga-spi/vga_spi.c -o CMakeFiles/vga_spi.dir/vga_spi.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_time/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_time/time.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_time/time.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_time/time.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.obj: /home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.obj   -c /home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
-	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj: CMakeFiles/vga_spi.dir/flags.make
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj: /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj   -c /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c > CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
-
-CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c -o CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/vga-spi/vga_spi.c -o CMakeFiles/vga_spi.dir/vga_spi.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj   -c /home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj: CMakeFiles/vga_spi.dir/flags.make
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c > CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
+
+CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c -o CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
 
 # Object files for target vga_spi
 vga_spi_OBJECTS = \
 "CMakeFiles/vga_spi.dir/vga_spi.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" \
-"CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj"
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" \
+"CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj"
 
 # External object files for target vga_spi
 vga_spi_EXTERNAL_OBJECTS =
 
 vga_spi.elf: CMakeFiles/vga_spi.dir/vga_spi.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/time.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/common/pico_util/queue.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/Pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+vga_spi.elf: CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
 vga_spi.elf: CMakeFiles/vga_spi.dir/build.make
 vga_spi.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 vga_spi.elf: CMakeFiles/vga_spi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Linking CXX executable vga_spi.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Linking CXX executable vga_spi.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vga_spi.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/arm-none-eabi-objcopy -Oihex /home/thomas/Pico/vga-spi/build/vga_spi.elf vga_spi.hex
-	/usr/bin/arm-none-eabi-objcopy -Obinary /home/thomas/Pico/vga-spi/build/vga_spi.elf vga_spi.bin
-	/usr/bin/arm-none-eabi-objdump -h /home/thomas/Pico/vga-spi/build/vga_spi.elf >vga_spi.dis
-	/usr/bin/arm-none-eabi-objdump -d /home/thomas/Pico/vga-spi/build/vga_spi.elf >>vga_spi.dis
-	elf2uf2/elf2uf2 /home/thomas/Pico/vga-spi/build/vga_spi.elf vga_spi.uf2
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/thomas/PiPico/vga-spi/build/vga_spi.elf vga_spi.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/thomas/PiPico/vga-spi/build/vga_spi.elf vga_spi.bin
+	/usr/bin/arm-none-eabi-objdump -h /home/thomas/PiPico/vga-spi/build/vga_spi.elf >vga_spi.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/thomas/PiPico/vga-spi/build/vga_spi.elf >>vga_spi.dis
+	elf2uf2/elf2uf2 /home/thomas/PiPico/vga-spi/build/vga_spi.elf vga_spi.uf2
 
 # Rule to build all files generated by this target.
 CMakeFiles/vga_spi.dir/build: vga_spi.elf
@@ -731,6 +731,6 @@ CMakeFiles/vga_spi.dir/clean:
 .PHONY : CMakeFiles/vga_spi.dir/clean
 
 CMakeFiles/vga_spi.dir/depend:
-	cd /home/thomas/Pico/vga-spi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Pico/vga-spi /home/thomas/Pico/vga-spi /home/thomas/Pico/vga-spi/build /home/thomas/Pico/vga-spi/build /home/thomas/Pico/vga-spi/build/CMakeFiles/vga_spi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thomas/PiPico/vga-spi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/PiPico/vga-spi /home/thomas/PiPico/vga-spi /home/thomas/PiPico/vga-spi/build /home/thomas/PiPico/vga-spi/build /home/thomas/PiPico/vga-spi/build/CMakeFiles/vga_spi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vga_spi.dir/depend
 

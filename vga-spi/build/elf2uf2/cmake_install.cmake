@@ -1,4 +1,4 @@
-# Install script for directory: /home/thomas/Pico/pico-sdk/tools/elf2uf2
+# Install script for directory: /home/thomas/PiPico/pico-sdk/tools/elf2uf2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/thomas/Pico/vga-spi/build/elf2uf2/boot_uf2_headers/cmake_install.cmake")
+  include("/home/thomas/PiPico/vga-spi/build/elf2uf2/boot_uf2_headers/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/thomas/Pico/vga-spi/build/elf2uf2/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/thomas/PiPico/vga-spi/build/elf2uf2/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

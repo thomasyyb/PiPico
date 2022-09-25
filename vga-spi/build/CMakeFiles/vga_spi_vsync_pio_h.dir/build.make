@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Pico/vga-spi
+CMAKE_SOURCE_DIR = /home/thomas/PiPico/vga-spi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Pico/vga-spi/build
+CMAKE_BINARY_DIR = /home/thomas/PiPico/vga-spi/build
 
 # Utility rule file for vga_spi_vsync_pio_h.
 
@@ -57,8 +57,8 @@ CMakeFiles/vga_spi_vsync_pio_h: vsync.pio.h
 
 
 vsync.pio.h: ../vsync.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating vsync.pio.h"
-	pioasm/pioasm -o c-sdk /home/thomas/Pico/vga-spi/vsync.pio /home/thomas/Pico/vga-spi/build/vsync.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating vsync.pio.h"
+	pioasm/pioasm -o c-sdk /home/thomas/PiPico/vga-spi/vsync.pio /home/thomas/PiPico/vga-spi/build/vsync.pio.h
 
 vga_spi_vsync_pio_h: CMakeFiles/vga_spi_vsync_pio_h
 vga_spi_vsync_pio_h: vsync.pio.h
@@ -76,6 +76,6 @@ CMakeFiles/vga_spi_vsync_pio_h.dir/clean:
 .PHONY : CMakeFiles/vga_spi_vsync_pio_h.dir/clean
 
 CMakeFiles/vga_spi_vsync_pio_h.dir/depend:
-	cd /home/thomas/Pico/vga-spi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Pico/vga-spi /home/thomas/Pico/vga-spi /home/thomas/Pico/vga-spi/build /home/thomas/Pico/vga-spi/build /home/thomas/Pico/vga-spi/build/CMakeFiles/vga_spi_vsync_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thomas/PiPico/vga-spi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/PiPico/vga-spi /home/thomas/PiPico/vga-spi /home/thomas/PiPico/vga-spi/build /home/thomas/PiPico/vga-spi/build /home/thomas/PiPico/vga-spi/build/CMakeFiles/vga_spi_vsync_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vga_spi_vsync_pio_h.dir/depend
 

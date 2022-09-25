@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Pico/vga-spi
+CMAKE_SOURCE_DIR = /home/thomas/PiPico/vga-spi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Pico/vga-spi/build
+CMAKE_BINARY_DIR = /home/thomas/PiPico/vga-spi/build
 
 # Utility rule file for PioasmBuild.
 
@@ -64,52 +64,52 @@ CMakeFiles/PioasmBuild-complete: pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
 CMakeFiles/PioasmBuild-complete: pioasm/src/PioasmBuild-stamp/PioasmBuild-configure
 CMakeFiles/PioasmBuild-complete: pioasm/src/PioasmBuild-stamp/PioasmBuild-build
 CMakeFiles/PioasmBuild-complete: pioasm/src/PioasmBuild-stamp/PioasmBuild-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'PioasmBuild'"
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/vga-spi/build/CMakeFiles
-	/usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/CMakeFiles/PioasmBuild-complete
-	/usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'PioasmBuild'"
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/vga-spi/build/CMakeFiles
+	/usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/CMakeFiles/PioasmBuild-complete
+	/usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-done
 
 pioasm/src/PioasmBuild-stamp/PioasmBuild-install: pioasm/src/PioasmBuild-stamp/PioasmBuild-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'PioasmBuild'"
-	cd /home/thomas/Pico/vga-spi/build/pioasm && /usr/bin/cmake -E echo_append
-	cd /home/thomas/Pico/vga-spi/build/pioasm && /usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'PioasmBuild'"
+	cd /home/thomas/PiPico/vga-spi/build/pioasm && /usr/bin/cmake -E echo_append
+	cd /home/thomas/PiPico/vga-spi/build/pioasm && /usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-install
 
 pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'PioasmBuild'"
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/pico-sdk/tools/pioasm
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/vga-spi/build/pioasm
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/vga-spi/build/pioasm
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/vga-spi/build/pioasm/tmp
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/vga-spi/build/pioasm/src
-	/usr/bin/cmake -E make_directory /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp
-	/usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'PioasmBuild'"
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/pico-sdk/tools/pioasm
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/vga-spi/build/pioasm
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/vga-spi/build/pioasm
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/vga-spi/build/pioasm/tmp
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/vga-spi/build/pioasm/src
+	/usr/bin/cmake -E make_directory /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp
+	/usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
 
 pioasm/src/PioasmBuild-stamp/PioasmBuild-download: pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'PioasmBuild'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'PioasmBuild'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-download
+	/usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-download
 
 pioasm/src/PioasmBuild-stamp/PioasmBuild-update: pioasm/src/PioasmBuild-stamp/PioasmBuild-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'PioasmBuild'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No update step for 'PioasmBuild'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-update
+	/usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-update
 
 pioasm/src/PioasmBuild-stamp/PioasmBuild-patch: pioasm/src/PioasmBuild-stamp/PioasmBuild-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'PioasmBuild'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'PioasmBuild'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
+	/usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
 
 pioasm/src/PioasmBuild-stamp/PioasmBuild-configure: pioasm/tmp/PioasmBuild-cfgcmd.txt
 pioasm/src/PioasmBuild-stamp/PioasmBuild-configure: pioasm/src/PioasmBuild-stamp/PioasmBuild-update
 pioasm/src/PioasmBuild-stamp/PioasmBuild-configure: pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'PioasmBuild'"
-	cd /home/thomas/Pico/vga-spi/build/pioasm && /usr/bin/cmake "-GUnix Makefiles" /home/thomas/Pico/pico-sdk/tools/pioasm
-	cd /home/thomas/Pico/vga-spi/build/pioasm && /usr/bin/cmake -E touch /home/thomas/Pico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing configure step for 'PioasmBuild'"
+	cd /home/thomas/PiPico/vga-spi/build/pioasm && /usr/bin/cmake "-GUnix Makefiles" -C/home/thomas/PiPico/vga-spi/build/pioasm/tmp/PioasmBuild-cache-Release.cmake /home/thomas/PiPico/pico-sdk/tools/pioasm
+	cd /home/thomas/PiPico/vga-spi/build/pioasm && /usr/bin/cmake -E touch /home/thomas/PiPico/vga-spi/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure
 
 pioasm/src/PioasmBuild-stamp/PioasmBuild-build: pioasm/src/PioasmBuild-stamp/PioasmBuild-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/Pico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'PioasmBuild'"
-	cd /home/thomas/Pico/vga-spi/build/pioasm && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/thomas/PiPico/vga-spi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing build step for 'PioasmBuild'"
+	cd /home/thomas/PiPico/vga-spi/build/pioasm && $(MAKE)
 
 PioasmBuild: CMakeFiles/PioasmBuild
 PioasmBuild: CMakeFiles/PioasmBuild-complete
@@ -134,6 +134,6 @@ CMakeFiles/PioasmBuild.dir/clean:
 .PHONY : CMakeFiles/PioasmBuild.dir/clean
 
 CMakeFiles/PioasmBuild.dir/depend:
-	cd /home/thomas/Pico/vga-spi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Pico/vga-spi /home/thomas/Pico/vga-spi /home/thomas/Pico/vga-spi/build /home/thomas/Pico/vga-spi/build /home/thomas/Pico/vga-spi/build/CMakeFiles/PioasmBuild.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thomas/PiPico/vga-spi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/PiPico/vga-spi /home/thomas/PiPico/vga-spi /home/thomas/PiPico/vga-spi/build /home/thomas/PiPico/vga-spi/build /home/thomas/PiPico/vga-spi/build/CMakeFiles/PioasmBuild.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PioasmBuild.dir/depend
 
