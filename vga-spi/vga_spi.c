@@ -123,7 +123,7 @@ int main() {
 
     // Initialize stdio
     stdio_init_all();
-
+    
     // Choose which PIO instance to use (there are two instances, each with 4 state machines)
     PIO pio = pio0;
 
