@@ -104,9 +104,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/include"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/thomas/PiPico/cam-vga/cam_vga.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/cam_vga.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj"
@@ -120,9 +121,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
@@ -231,8 +234,11 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/include"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/thomas/PiPico/cam-vga/cam_vga.cpp" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/cam_vga.cpp.obj"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/thomas/PiPico/cam-vga/build/CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -322,6 +328,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/include"
   "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/include"
   )
 
 # Targets to which this target links.

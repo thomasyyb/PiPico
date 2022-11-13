@@ -57,18 +57,18 @@ include CMakeFiles/cam_vga.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cam_vga.dir/flags.make
 
-CMakeFiles/cam_vga.dir/cam_vga.c.obj: CMakeFiles/cam_vga.dir/flags.make
-CMakeFiles/cam_vga.dir/cam_vga.c.obj: ../cam_vga.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/cam-vga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cam_vga.dir/cam_vga.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cam_vga.dir/cam_vga.c.obj   -c /home/thomas/PiPico/cam-vga/cam_vga.c
+CMakeFiles/cam_vga.dir/cam_vga.cpp.obj: CMakeFiles/cam_vga.dir/flags.make
+CMakeFiles/cam_vga.dir/cam_vga.cpp.obj: ../cam_vga.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/cam-vga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cam_vga.dir/cam_vga.cpp.obj"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cam_vga.dir/cam_vga.cpp.obj -c /home/thomas/PiPico/cam-vga/cam_vga.cpp
 
-CMakeFiles/cam_vga.dir/cam_vga.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cam_vga.dir/cam_vga.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/cam-vga/cam_vga.c > CMakeFiles/cam_vga.dir/cam_vga.c.i
+CMakeFiles/cam_vga.dir/cam_vga.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cam_vga.dir/cam_vga.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/PiPico/cam-vga/cam_vga.cpp > CMakeFiles/cam_vga.dir/cam_vga.cpp.i
 
-CMakeFiles/cam_vga.dir/cam_vga.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cam_vga.dir/cam_vga.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/cam-vga/cam_vga.c -o CMakeFiles/cam_vga.dir/cam_vga.c.s
+CMakeFiles/cam_vga.dir/cam_vga.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cam_vga.dir/cam_vga.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/PiPico/cam-vga/cam_vga.cpp -o CMakeFiles/cam_vga.dir/cam_vga.cpp.s
 
 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/cam_vga.dir/flags.make
 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
@@ -606,9 +606,35 @@ CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_v
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c -o CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
 
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/cam_vga.dir/flags.make
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/cam-vga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/cam_vga.dir/flags.make
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/PiPico/cam-vga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj   -c /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c
+
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+
 # Object files for target cam_vga
 cam_vga_OBJECTS = \
-"CMakeFiles/cam_vga.dir/cam_vga.c.obj" \
+"CMakeFiles/cam_vga.dir/cam_vga.cpp.obj" \
 "CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
@@ -656,12 +682,14 @@ cam_vga_OBJECTS = \
 "CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
 "CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" \
 "CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" \
-"CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj"
+"CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj" \
+"CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" \
+"CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
 
 # External object files for target cam_vga
 cam_vga_EXTERNAL_OBJECTS =
 
-cam_vga.elf: CMakeFiles/cam_vga.dir/cam_vga.c.obj
+cam_vga.elf: CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
 cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -710,10 +738,12 @@ cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/p
 cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+cam_vga.elf: CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 cam_vga.elf: CMakeFiles/cam_vga.dir/build.make
 cam_vga.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 cam_vga.elf: CMakeFiles/cam_vga.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/PiPico/cam-vga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Linking CXX executable cam_vga.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/PiPico/cam-vga/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX executable cam_vga.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cam_vga.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /home/thomas/PiPico/cam-vga/build/cam_vga.elf cam_vga.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /home/thomas/PiPico/cam-vga/build/cam_vga.elf cam_vga.bin

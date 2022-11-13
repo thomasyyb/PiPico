@@ -253,32 +253,32 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-cam_vga.obj: cam_vga.c.obj
+cam_vga.obj: cam_vga.cpp.obj
 
 .PHONY : cam_vga.obj
 
 # target to build an object file
-cam_vga.c.obj:
-	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/cam_vga.c.obj
-.PHONY : cam_vga.c.obj
+cam_vga.cpp.obj:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+.PHONY : cam_vga.cpp.obj
 
-cam_vga.i: cam_vga.c.i
+cam_vga.i: cam_vga.cpp.i
 
 .PHONY : cam_vga.i
 
 # target to preprocess a source file
-cam_vga.c.i:
-	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/cam_vga.c.i
-.PHONY : cam_vga.c.i
+cam_vga.cpp.i:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/cam_vga.cpp.i
+.PHONY : cam_vga.cpp.i
 
-cam_vga.s: cam_vga.c.s
+cam_vga.s: cam_vga.cpp.s
 
 .PHONY : cam_vga.s
 
 # target to generate assembly for a file
-cam_vga.c.s:
-	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/cam_vga.c.s
-.PHONY : cam_vga.c.s
+cam_vga.cpp.s:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/cam_vga.cpp.s
+.PHONY : cam_vga.cpp.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.obj: home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
@@ -640,6 +640,33 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
@@ -729,6 +756,33 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/thomas/PiPic
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.obj
+
+# target to build an object file
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.i
+
+# target to preprocess a source file
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.s
+
+# target to generate assembly for a file
+home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
+	$(MAKE) -f CMakeFiles/cam_vga.dir/build.make CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
@@ -1440,6 +1494,9 @@ help:
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
@@ -1450,6 +1507,9 @@ help:
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.obj"
+	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.i"
+	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.s"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.i"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.s"

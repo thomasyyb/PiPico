@@ -7,6 +7,9 @@ include(pico_sdk_import.cmake)
 # give the project a name (anything you want)
 project(cam_vga)
 
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+
 # initialize the sdk
 pico_sdk_init()
 
@@ -21,14 +24,18 @@ pico_generate_pio_header(cam_vga ${CMAKE_CURRENT_LIST_DIR}/vsync.pio)
 pico_generate_pio_header(cam_vga ${CMAKE_CURRENT_LIST_DIR}/rgb.pio)
 
 # must match with executable name and source file names
-target_sources(cam_vga PRIVATE cam_vga.c)
+target_sources(cam_vga PRIVATE cam_vga.cpp)
 
 # must match with executable name
 target_link_libraries(cam_vga PRIVATE
                         pico_stdlib
                         hardware_pio
                         hardware_dma
-                        pico_bootsel_via_double_reset)
+                        pico_bootsel_via_double_reset
+                        hardware_i2c
+                        ArduCAM
+                        hardware_spi
+                        hardware_irq)
 
 # must match with executable name
 pico_add_extra_outputs(cam_vga)

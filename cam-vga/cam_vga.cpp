@@ -36,8 +36,8 @@
 #include "ov5642_regs.h"
 #include <cstdlib>
 #include "stdio.h"
-#include "bsp/board.h"
-#include "tusb.h"
+// #include "bsp/board.h"
+// #include "tusb.h"
 #include "pico/mutex.h"
 
 
@@ -153,6 +153,7 @@ int mode = 0;
 uint8_t start_capture = 0;
 ArduCAM myCAM( OV5642, CS );
 uint8_t read_fifo_burst(ArduCAM myCAM);
+void cam_init();
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 int main() {
@@ -160,55 +161,9 @@ int main() {
     // Initialize stdio
     stdio_init_all();
 
-    // Camera initialization
-    myCAM.Arducam_init();
-    printf("Hello\n");
-    gpio_init(CS);
-    gpio_set_dir(CS, GPIO_OUT);
-    gpio_put(CS, 1);
-    //Reset the CPLD
-    myCAM.write_reg(0x07, 0x80);
-    sleep_ms(100);
-    myCAM.write_reg(0x07, 0x00);
-    sleep_ms(100);
-    while (1) 
-    {
-        //Check if the ArduCAM SPI bus is OK
-        myCAM.write_reg(ARDUCHIP_TEST1, 0x55);
-        cameraCommand = myCAM.read_reg(ARDUCHIP_TEST1);
-        if (cameraCommand != 0x55) {
-            printf(" SPI interface Error!");
-            sleep_ms(1000); continue;
-        } else {
-            printf("ACK CMD SPI interface OK.END\n"); break;
-        }
-    }
-    while (1) 
-    {
-        //Check if the camera module type is OV5640
-        myCAM.wrSensorReg16_8(0xff, 0x01);
-        myCAM.rdSensorReg16_8(OV5642_CHIPID_HIGH, &vid);
-        myCAM.rdSensorReg16_8(OV5642_CHIPID_LOW, &pid);
-        if((vid != 0x56) || (pid != 0x42))
-        {
-            printf("Can't find OV5642 module!\n");
-            sleep_ms(1000); continue;
-        }
-        else 
-        {
-            printf("OV5642 detected.END\n"); break;
-        }
-    }
+    // Initialize Camera
+    cam_init();
 
-    //Change to JPEG capture mode and initialize the OV5642 module
-    myCAM.set_format(JPEG);
-    myCAM.InitCAM();
-    myCAM.write_reg(ARDUCHIP_TIM, VSYNC_LEVEL_MASK);   //VSYNC is active HIGH
-    myCAM.OV5642_set_JPEG_size(OV5642_320x240);
-    sleep_ms(1000);
-    myCAM.clear_fifo_flag();
-    myCAM.write_reg(ARDUCHIP_FRAMES,0x00);
-    
     // Choose which PIO instance to use (there are two instances, each with 4 state machines)
     PIO pio = pio0;
 
@@ -304,104 +259,179 @@ int main() {
     // of that array.
     dma_start_channel_mask((1u << rgb_chan_0)) ;
 
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////
-    // ===================================== Mandelbrot =================================================
-    /////////////////////////////////////////////////////////////////////////////////////////////////////
-    uint64_t begin_time ;
-    uint64_t end_time ;
-    while (true) {
-
-        // x values
-        for (i=0; i<640; i++) {
-            x[i] = float2fix28(-2.0f + 3.0f * (float)i/640.0f) ;
+    while(1) {
+        uint8_t cameraCommand_last = 0;
+        uint8_t is_header = 0;
+        start_capture = 1;
+        if (start_capture == 1)
+        {
+            myCAM.flush_fifo();
+            myCAM.clear_fifo_flag();
+            //Start capture
+            myCAM.start_capture();
+            start_capture = 0;
         }
-        
-        // y values
-        for (j=0; j<480; j++) {
-            y[j] = float2fix28( 1.0f - 2.0f * (float)j/480.0f) ;
+        if (myCAM.get_bit(ARDUCHIP_TRIG, CAP_DONE_MASK))
+        {
+            // printf("ACK CMD CAM Capture Done.");
+            read_fifo_burst(myCAM);
+            //Clear the capture done flag
+            myCAM.clear_fifo_flag();
         }
-
-        total_count = 0 ;
-        fix28 center = float2fix28(-0.25f);
-        fix28 radius2 = float2fix28(0.25f);
-
-        begin_time = time_us_64() ;
-
-        for (i=0; i<640; i++) {
-            
-            for (j=0; j<480; j++) {
-
-                Zre = Zre_sq = Zim = Zim_sq = 0 ;
-
-                Cre = x[i] ;
-                Cim = y[j] ;
-
-                // detect secondary bulb
-                // if ((multfix28(Cre+ONEfix28,Cre+ONEfix28)+multfix28(Cim,Cim))<SIXTEENTHfix28) {
-                //     count=max_count;
-                // }
-                // // detect big circle
-                // else if ((multfix28(Cre-center,Cre-center)+multfix28(Cim,Cim))<radius2) {
-                //     count=max_count;
-                // }
-                // // otherwise get ready to iterate
-                // else count = 0;
-                count = 0 ;
-
-                // Mandelbrot iteration
-                while (count++ < max_count) {
-                    Zim = (multfix28(Zre, Zim)<<1) + Cim ;
-                    Zre = Zre_sq - Zim_sq + Cre ;
-                    Zre_sq = multfix28(Zre, Zre) ;
-                    Zim_sq = multfix28(Zim, Zim) ;
-
-                    if ((Zre_sq + Zim_sq) >= FOURfix28) break ;
-                }
-                // Increment total count
-                total_count += count ;
-
-                // Draw the pixel
-                if (count >= max_count) drawPixel(i, j, BLACK) ;
-                else if (count >= (max_count>>1)) drawPixel(i, j, WHITE) ;
-                else if (count >= (max_count>>2)) drawPixel(i, j, CYAN) ;
-                else if (count >= (max_count>>3)) drawPixel(i, j, BLUE) ;
-                else if (count >= (max_count>>4)) drawPixel(i, j, RED) ;
-                else if (count >= (max_count>>5)) drawPixel(i, j, YELLOW) ;
-                else if (count >= (max_count>>6)) drawPixel(i, j, MAGENTA) ;
-                else drawPixel(i, j, RED) ;
-
-                // if (i >= 600) drawPixel(i, j, BLACK) ;
-                // else if (i >= 500) drawPixel(i, j, WHITE) ;
-                // else if (i >= 400) drawPixel(i, j, CYAN) ;
-                // else if (i >= 300) drawPixel(i, j, BLUE) ;
-                // else if (i >= 200) drawPixel(i, j, RED) ;
-                // else if (i >= 100) drawPixel(i, j, YELLOW) ;
-                // else               drawPixel(i, j, MAGENTA) ;
-
-            }
-        }
-
-        end_time = time_us_64() ;
-        printf("Total time: %3.6f seconds \n", (float)(end_time - begin_time)*(1./1000000.)) ;
-        printf("Total iterations: %d", total_count) ;
     }
+}
+
+
+// Camera initialization
+void cam_init() {
+    uint8_t vid, pid;
+    uint8_t cameraCommand;
+    myCAM.Arducam_init();
+    printf("Hello\n");
+    gpio_init(CS);
+    gpio_set_dir(CS, GPIO_OUT);
+    gpio_put(CS, 1);
+    //Reset the CPLD
+    myCAM.write_reg(0x07, 0x80);
+    sleep_ms(100);
+    myCAM.write_reg(0x07, 0x00);
+    sleep_ms(100);
+    while (1) 
+    {
+        //Check if the ArduCAM SPI bus is OK
+        myCAM.write_reg(ARDUCHIP_TEST1, 0x55);
+        cameraCommand = myCAM.read_reg(ARDUCHIP_TEST1);
+        if (cameraCommand != 0x55) {
+            printf(" SPI interface Error!");
+            sleep_ms(1000); continue;
+        } else {
+            printf("ACK CMD SPI interface OK.END\n"); break;
+        }
+    }
+    while (1) 
+    {
+        //Check if the camera module type is OV5640
+        myCAM.wrSensorReg16_8(0xff, 0x01);
+        myCAM.rdSensorReg16_8(OV5642_CHIPID_HIGH, &vid);
+        myCAM.rdSensorReg16_8(OV5642_CHIPID_LOW, &pid);
+        if((vid != 0x56) || (pid != 0x42))
+        {
+            printf("Can't find OV5642 module!\n");
+            sleep_ms(1000); continue;
+        }
+        else 
+        {
+            printf("OV5642 detected.END\n"); break;
+        }
+    }
+
+    //Change to JPEG capture mode and initialize the OV5642 module
+    myCAM.set_format(JPEG);
+    myCAM.InitCAM();
+    myCAM.write_reg(ARDUCHIP_TIM, VSYNC_LEVEL_MASK);   //VSYNC is active HIGH
+    myCAM.OV5642_set_JPEG_size(OV5642_320x240);
+    sleep_ms(1000);
+    myCAM.clear_fifo_flag();
+    myCAM.write_reg(ARDUCHIP_FRAMES,0x00);
 }
 
 // change this to read into memory
 // and then VGA output
 uint8_t read_fifo_burst(ArduCAM myCAM)
 {
-  int i , count;
-  int length = myCAM.read_fifo_length();
-  uint8_t * imageBuf =(uint8_t *) malloc(length*sizeof(uint8_t));
-  i = 0 ;
-  myCAM.CS_LOW();
-  myCAM.set_fifo_burst();  // Set fifo burst mode
-  spi_read_blocking(SPI_PORT, BURST_FIFO_READ,imageBuf, length);
-  myCAM.CS_HIGH();
-  SerialUsb(imageBuf, length);
-  free(imageBuf);
-  return 1;
+    int i , count;
+    int length = myCAM.read_fifo_length();
+    uint8_t * imageBuf =(uint8_t *) malloc(length*sizeof(uint8_t));
+    i = 0 ;
+    myCAM.CS_LOW();
+    myCAM.set_fifo_burst();  // Set fifo burst mode
+    spi_read_blocking(SPI_PORT, BURST_FIFO_READ,imageBuf, length);
+    myCAM.CS_HIGH();
+    // This should be replaced with a SPI write
+    // SerialUsb(imageBuf, length);
+    free(imageBuf);
+    return 1;
 }
 
+
+    // /////////////////////////////////////////////////////////////////////////////////////////////////////
+    // // ===================================== Mandelbrot =================================================
+    // /////////////////////////////////////////////////////////////////////////////////////////////////////
+    // uint64_t begin_time ;
+    // uint64_t end_time ;
+    // while (true) {
+
+    //     // x values
+    //     for (i=0; i<640; i++) {
+    //         x[i] = float2fix28(-2.0f + 3.0f * (float)i/640.0f) ;
+    //     }
+        
+    //     // y values
+    //     for (j=0; j<480; j++) {
+    //         y[j] = float2fix28( 1.0f - 2.0f * (float)j/480.0f) ;
+    //     }
+
+    //     total_count = 0 ;
+    //     fix28 center = float2fix28(-0.25f);
+    //     fix28 radius2 = float2fix28(0.25f);
+
+    //     begin_time = time_us_64() ;
+
+    //     for (i=0; i<640; i++) {
+            
+    //         for (j=0; j<480; j++) {
+
+    //             Zre = Zre_sq = Zim = Zim_sq = 0 ;
+
+    //             Cre = x[i] ;
+    //             Cim = y[j] ;
+
+    //             // detect secondary bulb
+    //             // if ((multfix28(Cre+ONEfix28,Cre+ONEfix28)+multfix28(Cim,Cim))<SIXTEENTHfix28) {
+    //             //     count=max_count;
+    //             // }
+    //             // // detect big circle
+    //             // else if ((multfix28(Cre-center,Cre-center)+multfix28(Cim,Cim))<radius2) {
+    //             //     count=max_count;
+    //             // }
+    //             // // otherwise get ready to iterate
+    //             // else count = 0;
+    //             count = 0 ;
+
+    //             // Mandelbrot iteration
+    //             while (count++ < max_count) {
+    //                 Zim = (multfix28(Zre, Zim)<<1) + Cim ;
+    //                 Zre = Zre_sq - Zim_sq + Cre ;
+    //                 Zre_sq = multfix28(Zre, Zre) ;
+    //                 Zim_sq = multfix28(Zim, Zim) ;
+
+    //                 if ((Zre_sq + Zim_sq) >= FOURfix28) break ;
+    //             }
+    //             // Increment total count
+    //             total_count += count ;
+
+    //             // Draw the pixel
+    //             if (count >= max_count) drawPixel(i, j, BLACK) ;
+    //             else if (count >= (max_count>>1)) drawPixel(i, j, WHITE) ;
+    //             else if (count >= (max_count>>2)) drawPixel(i, j, CYAN) ;
+    //             else if (count >= (max_count>>3)) drawPixel(i, j, BLUE) ;
+    //             else if (count >= (max_count>>4)) drawPixel(i, j, RED) ;
+    //             else if (count >= (max_count>>5)) drawPixel(i, j, YELLOW) ;
+    //             else if (count >= (max_count>>6)) drawPixel(i, j, MAGENTA) ;
+    //             else drawPixel(i, j, RED) ;
+
+    //             // if (i >= 600) drawPixel(i, j, BLACK) ;
+    //             // else if (i >= 500) drawPixel(i, j, WHITE) ;
+    //             // else if (i >= 400) drawPixel(i, j, CYAN) ;
+    //             // else if (i >= 300) drawPixel(i, j, BLUE) ;
+    //             // else if (i >= 200) drawPixel(i, j, RED) ;
+    //             // else if (i >= 100) drawPixel(i, j, YELLOW) ;
+    //             // else               drawPixel(i, j, MAGENTA) ;
+
+    //         }
+    //     }
+
+    //     end_time = time_us_64() ;
+    //     printf("Total time: %3.6f seconds \n", (float)(end_time - begin_time)*(1./1000000.)) ;
+    //     printf("Total iterations: %d", total_count) ;
+    // }
