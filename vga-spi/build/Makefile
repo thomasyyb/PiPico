@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/thomas/PiPico/vga-spi/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mandelbrot_rgb_pio_h
+
+# Build rule for target.
+mandelbrot_rgb_pio_h: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mandelbrot_rgb_pio_h
+.PHONY : mandelbrot_rgb_pio_h
+
+# fast build rule for target.
+mandelbrot_rgb_pio_h/fast:
+	$(MAKE) -f CMakeFiles/mandelbrot_rgb_pio_h.dir/build.make CMakeFiles/mandelbrot_rgb_pio_h.dir/build
+.PHONY : mandelbrot_rgb_pio_h/fast
+
+#=============================================================================
+# Target rules for targets named mandelbrot_vsync_pio_h
+
+# Build rule for target.
+mandelbrot_vsync_pio_h: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mandelbrot_vsync_pio_h
+.PHONY : mandelbrot_vsync_pio_h
+
+# fast build rule for target.
+mandelbrot_vsync_pio_h/fast:
+	$(MAKE) -f CMakeFiles/mandelbrot_vsync_pio_h.dir/build.make CMakeFiles/mandelbrot_vsync_pio_h.dir/build
+.PHONY : mandelbrot_vsync_pio_h/fast
+
+#=============================================================================
 # Target rules for targets named ELF2UF2Build
 
 # Build rule for target.
@@ -124,69 +150,30 @@ ELF2UF2Build/fast:
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
-# Target rules for targets named vga_spi_rgb_pio_h
+# Target rules for targets named mandelbrot_hsync_pio_h
 
 # Build rule for target.
-vga_spi_rgb_pio_h: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vga_spi_rgb_pio_h
-.PHONY : vga_spi_rgb_pio_h
+mandelbrot_hsync_pio_h: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mandelbrot_hsync_pio_h
+.PHONY : mandelbrot_hsync_pio_h
 
 # fast build rule for target.
-vga_spi_rgb_pio_h/fast:
-	$(MAKE) -f CMakeFiles/vga_spi_rgb_pio_h.dir/build.make CMakeFiles/vga_spi_rgb_pio_h.dir/build
-.PHONY : vga_spi_rgb_pio_h/fast
+mandelbrot_hsync_pio_h/fast:
+	$(MAKE) -f CMakeFiles/mandelbrot_hsync_pio_h.dir/build.make CMakeFiles/mandelbrot_hsync_pio_h.dir/build
+.PHONY : mandelbrot_hsync_pio_h/fast
 
 #=============================================================================
-# Target rules for targets named vga_spi_vsync_pio_h
+# Target rules for targets named mandelbrot
 
 # Build rule for target.
-vga_spi_vsync_pio_h: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vga_spi_vsync_pio_h
-.PHONY : vga_spi_vsync_pio_h
+mandelbrot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mandelbrot
+.PHONY : mandelbrot
 
 # fast build rule for target.
-vga_spi_vsync_pio_h/fast:
-	$(MAKE) -f CMakeFiles/vga_spi_vsync_pio_h.dir/build.make CMakeFiles/vga_spi_vsync_pio_h.dir/build
-.PHONY : vga_spi_vsync_pio_h/fast
-
-#=============================================================================
-# Target rules for targets named vga_spi_hsync_pio_h
-
-# Build rule for target.
-vga_spi_hsync_pio_h: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vga_spi_hsync_pio_h
-.PHONY : vga_spi_hsync_pio_h
-
-# fast build rule for target.
-vga_spi_hsync_pio_h/fast:
-	$(MAKE) -f CMakeFiles/vga_spi_hsync_pio_h.dir/build.make CMakeFiles/vga_spi_hsync_pio_h.dir/build
-.PHONY : vga_spi_hsync_pio_h/fast
-
-#=============================================================================
-# Target rules for targets named vga_spi
-
-# Build rule for target.
-vga_spi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vga_spi
-.PHONY : vga_spi
-
-# fast build rule for target.
-vga_spi/fast:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/build
-.PHONY : vga_spi/fast
-
-#=============================================================================
-# Target rules for targets named PioasmBuild
-
-# Build rule for target.
-PioasmBuild: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 PioasmBuild
-.PHONY : PioasmBuild
-
-# fast build rule for target.
-PioasmBuild/fast:
-	$(MAKE) -f CMakeFiles/PioasmBuild.dir/build.make CMakeFiles/PioasmBuild.dir/build
-.PHONY : PioasmBuild/fast
+mandelbrot/fast:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+.PHONY : mandelbrot/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default_padded_checksummed_asm
@@ -227,13 +214,52 @@ bs2_default/fast:
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
 .PHONY : bs2_default/fast
 
+#=============================================================================
+# Target rules for targets named PioasmBuild
+
+# Build rule for target.
+PioasmBuild: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PioasmBuild
+.PHONY : PioasmBuild
+
+# fast build rule for target.
+PioasmBuild/fast:
+	$(MAKE) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir/build
+.PHONY : PioasmBuild/fast
+
+#=============================================================================
+# Target rules for targets named cyw43_firmware_package
+
+# Build rule for target.
+cyw43_firmware_package: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cyw43_firmware_package
+.PHONY : cyw43_firmware_package
+
+# fast build rule for target.
+cyw43_firmware_package/fast:
+	$(MAKE) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir/build
+.PHONY : cyw43_firmware_package/fast
+
+#=============================================================================
+# Target rules for targets named cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+
+# Build rule for target.
+cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+.PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+
+# fast build rule for target.
+cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
+	$(MAKE) -f pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
+.PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
+
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.obj: home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.obj
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.i: home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -242,7 +268,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.i: home/thomas
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.s: home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -251,7 +277,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.s: home/thomas
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.obj: home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -260,7 +286,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.obj: home/thomas/PiPi
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.i: home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -269,7 +295,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.i: home/thomas/PiPico
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.s: home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -278,7 +304,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.s: home/thomas/PiPico
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.obj: home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -287,7 +313,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.obj: home/thomas/PiPico/p
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.i: home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -296,7 +322,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.i: home/thomas/PiPico/pic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.s: home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -305,7 +331,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.s: home/thomas/PiPico/pic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.obj: home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -314,7 +340,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.obj: home/thomas/PiPico/pic
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.i: home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -323,7 +349,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.i: home/thomas/PiPico/pico-
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.s: home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -332,7 +358,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.s: home/thomas/PiPico/pico-
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_time/time.obj: home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
@@ -341,7 +367,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_time/time.obj: home/thomas/PiPico/pi
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_time/time.i: home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i
@@ -350,7 +376,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_time/time.i: home/thomas/PiPico/pico
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_time/time.s: home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s
@@ -359,7 +385,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_time/time.s: home/thomas/PiPico/pico
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -368,7 +394,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/thomas
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.i: home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -377,7 +403,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.i: home/thomas/P
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.s: home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -386,7 +412,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.s: home/thomas/P
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.obj: home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -395,7 +421,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.obj: home/thomas/PiPic
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.i: home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -404,7 +430,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.i: home/thomas/PiPico/
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.s: home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -413,7 +439,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.s: home/thomas/PiPico/
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.obj: home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -422,7 +448,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.obj: home/thomas/PiPico/p
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.i: home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -431,7 +457,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.i: home/thomas/PiPico/pic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.s: home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -440,7 +466,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.s: home/thomas/PiPico/pic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.obj: home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -449,7 +475,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.obj: home/thomas/PiPico/p
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.i: home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i
@@ -458,7 +484,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.i: home/thomas/PiPico/pic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.s: home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s
@@ -467,7 +493,7 @@ home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.s: home/thomas/PiPico/pic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -476,7 +502,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/thomas
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -485,7 +511,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/thomas/P
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -494,7 +520,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/thomas/P
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -503,7 +529,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/thom
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -512,7 +538,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/thomas
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -521,7 +547,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/thomas
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -530,7 +556,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/th
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
@@ -539,7 +565,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/thomas/PiP
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
@@ -548,7 +574,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/thomas/PiPic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
@@ -557,7 +583,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/thomas/PiPic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -566,7 +592,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/thomas/P
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -575,7 +601,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/thomas/PiP
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -584,7 +610,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/thomas/PiP
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -593,7 +619,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/thomas/PiP
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -602,7 +628,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/thomas/PiPic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -611,7 +637,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/thomas/PiPic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -620,7 +646,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: h
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
@@ -629,7 +655,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/thomas/PiP
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
@@ -638,7 +664,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/thomas/PiPic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
@@ -647,7 +673,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/thomas/PiPic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -656,7 +682,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/thomas/PiP
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -665,7 +691,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/thomas/PiPic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -674,7 +700,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/thomas/PiPic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -683,7 +709,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/thomas/P
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -692,7 +718,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/thomas/PiP
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -701,7 +727,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/thomas/PiP
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -710,7 +736,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/thomas
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -719,7 +745,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/thomas/P
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -728,7 +754,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/thomas/P
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -737,7 +763,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/thomas/P
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -746,7 +772,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/thomas/PiP
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -755,7 +781,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/thomas/PiP
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -764,7 +790,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/thomas/P
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -773,7 +799,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/thomas/PiP
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -782,7 +808,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/thomas/PiP
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -791,7 +817,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -800,7 +826,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/th
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -809,7 +835,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/th
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -818,7 +844,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/thomas/P
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -827,7 +853,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/thomas/PiP
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -836,7 +862,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/thomas/PiP
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -845,7 +871,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -854,7 +880,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/thomas
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -863,7 +889,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/thomas/P
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -872,7 +898,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/thomas/P
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
@@ -881,7 +907,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bo
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
@@ -890,7 +916,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bo
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
@@ -899,7 +925,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bo
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -908,7 +934,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/thomas
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -917,7 +943,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/th
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -926,7 +952,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -935,7 +961,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/t
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -944,7 +970,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/t
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -953,7 +979,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/tho
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -962,7 +988,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/thoma
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -971,7 +997,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/thoma
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -980,7 +1006,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: h
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -989,7 +1015,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/thom
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -998,7 +1024,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/t
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1007,7 +1033,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/tho
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1016,7 +1042,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/tho
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1025,7 +1051,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/thoma
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1034,7 +1060,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/thomas/
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1043,7 +1069,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/thomas/
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1052,7 +1078,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: hom
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1061,7 +1087,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1070,7 +1096,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/tho
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1079,7 +1105,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/thoma
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1088,7 +1114,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/thoma
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1097,7 +1123,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1106,7 +1132,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/thom
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1115,7 +1141,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/thomas
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1124,7 +1150,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/thomas
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1133,7 +1159,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/thomas/P
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1142,7 +1168,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/thomas/PiP
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1151,7 +1177,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/thomas/PiP
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1160,7 +1186,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/thomas
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1169,7 +1195,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/thomas/P
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1178,7 +1204,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/thomas/P
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1187,7 +1213,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: h
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1196,7 +1222,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: hom
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1205,7 +1231,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: hom
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1214,7 +1240,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/tho
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1223,7 +1249,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: ho
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1232,7 +1258,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1241,7 +1267,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1250,7 +1276,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/thomas/PiP
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1259,7 +1285,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/thomas/PiPic
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1268,7 +1294,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/thomas/PiPic
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1277,7 +1303,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1286,7 +1312,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/th
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1295,7 +1321,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/th
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1304,7 +1330,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/thomas/P
 
 # target to build an object file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1313,7 +1339,7 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/thomas/PiP
 
 # target to preprocess a source file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1322,35 +1348,35 @@ home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/thomas/PiP
 
 # target to generate assembly for a file
 home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-vga_spi.obj: vga_spi.c.obj
+mandelbrot.obj: mandelbrot.c.obj
 
-.PHONY : vga_spi.obj
+.PHONY : mandelbrot.obj
 
 # target to build an object file
-vga_spi.c.obj:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/vga_spi.c.obj
-.PHONY : vga_spi.c.obj
+mandelbrot.c.obj:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.obj
+.PHONY : mandelbrot.c.obj
 
-vga_spi.i: vga_spi.c.i
+mandelbrot.i: mandelbrot.c.i
 
-.PHONY : vga_spi.i
+.PHONY : mandelbrot.i
 
 # target to preprocess a source file
-vga_spi.c.i:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/vga_spi.c.i
-.PHONY : vga_spi.c.i
+mandelbrot.c.i:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.i
+.PHONY : mandelbrot.c.i
 
-vga_spi.s: vga_spi.c.s
+mandelbrot.s: mandelbrot.c.s
 
-.PHONY : vga_spi.s
+.PHONY : mandelbrot.s
 
 # target to generate assembly for a file
-vga_spi.c.s:
-	$(MAKE) -f CMakeFiles/vga_spi.dir/build.make CMakeFiles/vga_spi.dir/vga_spi.c.s
-.PHONY : vga_spi.c.s
+mandelbrot.c.s:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.c.s
+.PHONY : mandelbrot.c.s
 
 # Help Target
 help:
@@ -1358,17 +1384,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... mandelbrot_rgb_pio_h"
+	@echo "... mandelbrot_vsync_pio_h"
 	@echo "... ELF2UF2Build"
-	@echo "... vga_spi_rgb_pio_h"
-	@echo "... vga_spi_vsync_pio_h"
-	@echo "... vga_spi_hsync_pio_h"
-	@echo "... vga_spi"
-	@echo "... PioasmBuild"
+	@echo "... mandelbrot_hsync_pio_h"
+	@echo "... mandelbrot"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default"
+	@echo "... PioasmBuild"
+	@echo "... cyw43_firmware_package"
+	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1491,9 +1519,9 @@ help:
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... vga_spi.obj"
-	@echo "... vga_spi.i"
-	@echo "... vga_spi.s"
+	@echo "... mandelbrot.obj"
+	@echo "... mandelbrot.i"
+	@echo "... mandelbrot.s"
 .PHONY : help
 
 

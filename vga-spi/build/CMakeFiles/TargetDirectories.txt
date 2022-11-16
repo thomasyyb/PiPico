@@ -1,11 +1,10 @@
-/home/thomas/PiPico/vga-spi/build/CMakeFiles/rebuild_cache.dir
 /home/thomas/PiPico/vga-spi/build/CMakeFiles/edit_cache.dir
+/home/thomas/PiPico/vga-spi/build/CMakeFiles/rebuild_cache.dir
+/home/thomas/PiPico/vga-spi/build/CMakeFiles/mandelbrot_rgb_pio_h.dir
+/home/thomas/PiPico/vga-spi/build/CMakeFiles/mandelbrot_vsync_pio_h.dir
 /home/thomas/PiPico/vga-spi/build/CMakeFiles/ELF2UF2Build.dir
-/home/thomas/PiPico/vga-spi/build/CMakeFiles/vga_spi_rgb_pio_h.dir
-/home/thomas/PiPico/vga-spi/build/CMakeFiles/vga_spi_vsync_pio_h.dir
-/home/thomas/PiPico/vga-spi/build/CMakeFiles/vga_spi_hsync_pio_h.dir
-/home/thomas/PiPico/vga-spi/build/CMakeFiles/vga_spi.dir
-/home/thomas/PiPico/vga-spi/build/CMakeFiles/PioasmBuild.dir
+/home/thomas/PiPico/vga-spi/build/CMakeFiles/mandelbrot_hsync_pio_h.dir
+/home/thomas/PiPico/vga-spi/build/CMakeFiles/mandelbrot.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/CMakeFiles/rebuild_cache.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/CMakeFiles/edit_cache.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/tools/CMakeFiles/rebuild_cache.dir
@@ -130,7 +129,10 @@
 /home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/pico_stdio_usb/CMakeFiles/rebuild_cache.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/pico_stdio_usb/CMakeFiles/edit_cache.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/rebuild_cache.dir
+/home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/PioasmBuild.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/edit_cache.dir
+/home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_firmware_package.dir
+/home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/pico_lwip/CMakeFiles/rebuild_cache.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/pico_lwip/CMakeFiles/edit_cache.dir
 /home/thomas/PiPico/vga-spi/build/pico-sdk/src/rp2_common/pico_cyw43_arch/CMakeFiles/rebuild_cache.dir

@@ -123,7 +123,7 @@ int main() {
 
     // Initialize stdio
     stdio_init_all();
-    
+    printf("helllo\n");
     // Choose which PIO instance to use (there are two instances, each with 4 state machines)
     PIO pio = pio0;
 
@@ -242,6 +242,7 @@ int main() {
         fix28 radius2 = float2fix28(0.25f);
 
         begin_time = time_us_64() ;
+        printf("mandelbrot begin\n");
 
         for (i=0; i<640; i++) {
             
