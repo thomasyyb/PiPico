@@ -3,7 +3,6 @@
 #=========================================================================
 
 main/
-mandelbrot/
 pico-examples/
 pico-sdk/
 PICO_SPI_CAM/
