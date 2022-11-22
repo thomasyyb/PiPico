@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+C:/Users/vha3/Pico/mandelbrot-multicore/build/CMakeFiles/ELF2UF2Build
+C:/Users/vha3/Pico/mandelbrot-multicore/build/CMakeFiles/ELF2UF2Build.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/CMakeFiles/ELF2UF2Build-complete.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+C:/Users/vha3/Pico/mandelbrot-multicore/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule

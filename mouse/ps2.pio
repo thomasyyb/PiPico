@@ -1,0 +1,56 @@
+; PS/2 mouse pio driver
+; Pin mapping:
+; - Input pin 0 is SDA, 1 is SCL (if clock stretching used)
+; - Jump pin is SDA
+; - Side-set pin 0 is SCL
+; - Set pin 0 is SDA
+; - OUT pin 0 is SDA
+; - SCL must be SDA + 1 (for wait mapping)
+
+.program ps2
+
+    set pins, 1               ; pull up the clock
+    set x, 11                 ; 11 bit transactions per byte
+    wait 0 gpio 14      [15]  ; wait for the clk to be low, and wait 15 cycles for the middle of the clk low
+bitloop:
+    in pins, 1                ; read input data
+    wait 1 gpio 14            ; wait for the clk to be high
+    wait 0 gpio 14      [15]  ; wait for the clk to be low, and wait 15 cycles for the middle of the clk low
+    jmp x-- bitloop
+    set pins, 0         [15]  ; pull down the clock
+
+
+% c-sdk {
+#include "hardware/gpio.h"
+static inline void ps2_program_init(PIO pio, uint sm, uint offset, float clkdiv, uint pin_clk, uint pin_data) {
+
+    pio_sm_config c = ps2_program_get_default_config(offset);
+    // sm_config_set_out_pins(&c, pin_clk, 1);
+    // sm_config_set_set_pins(&c, pin_data, 1);
+    sm_config_set_set_pins(&c, pin_clk, 1);
+    sm_config_set_in_pins(&c, pin_data);
+    
+    // Only support MSB-first in this example code (shift to left, auto push/pull, threshold=nbits)
+    // Turn off autopull
+    // sm_config_set_out_shift(&c, false, false, n_bits);
+    sm_config_set_in_shift(&c, false, false, 11);  // 11 bits per transaction
+    sm_config_set_clkdiv(&c, clkdiv);
+
+    // CLK and DATA are both input right now
+    // pio_sm_set_pins_with_mask(pio, sm, 0, (1u << pin_sck) | (1u << pin_mosi));  // save this one as an set example
+    // pio_sm_set_pins_with_mask(pio, sm, 1, (1u << pin_cs));  // save this one as an set example
+    // set the pindirs as output for now
+    pio_sm_set_pindirs_with_mask(pio, sm, (1u << pin_data) | (1u << pin_clk), (1u << pin_data) | (1u << pin_clk));
+    pio_gpio_init(pio, pin_clk);
+    pio_gpio_init(pio, pin_data);
+
+    // The pin muxes can be configured to invert the output (among other things)
+    // and this is a cheesy way to get CPOL=1
+    // gpio_set_outover(pin_sck, cpol ? GPIO_OVERRIDE_INVERT : GPIO_OVERRIDE_NORMAL);
+    // SPI is synchronous, so bypass input synchroniser to reduce input delay.
+    // hw_set_bits(&pio->input_sync_bypass, 1u << pin_miso);  // maybe try this for PS/2 later
+
+    pio_sm_init(pio, sm, offset, &c);
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}
