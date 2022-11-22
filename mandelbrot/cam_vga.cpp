@@ -8,8 +8,9 @@
  *  - GPIO 16 ---> VGA Hsync
  *  - GPIO 17 ---> VGA Vsync
  *  - GPIO 18 ---> 330 ohm resistor ---> VGA Red
- *  - GPIO 19 ---> 330 ohm resistor ---> VGA Green
- *  - GPIO 20 ---> 330 ohm resistor ---> VGA Blue
+ *  - GPIO 19 ---> 330 ohm resistor ---> VGA Green 0
+ *  - GPIO 20 ---> 330 ohm resistor ---> VGA Green 1
+ *  - GPIO 21 ---> 330 ohm resistor ---> VGA Blue
  *  - RP2040 GND ---> VGA GND
  *
  * RESOURCES USED
@@ -57,17 +58,23 @@ unsigned char vga_data_array[TXCOUNT];
 char * address_pointer = (char*)(&vga_data_array[0]) ;
 
 // Bit masks for drawPixel routine
-#define TOPMASK 0b11000111
-#define BOTTOMMASK 0b11111000
+// #define TOPMASK 0b11000111
+// #define BOTTOMMASK 0b11111000
+// we have four bits right now
+#define TOPMASK 0b00001111
+#define BOTTOMMASK 0b11110000
 
 // Give the I/O pins that we're using some names that make sense
-#define HSYNC     16
-#define VSYNC     17
-#define RED_PIN   18
-#define GREEN_PIN 19
-#define BLUE_PIN  20
+#define HSYNC       16
+#define VSYNC       17
+#define RED_PIN     18
+#define GREEN_PIN_0 19
+#define GREEN_PIN_1 20
+#define BLUE_PIN    21
+// change to four pins, two for green, needs to change the wiring
 
 // We can only produce 8 colors, so let's give them readable names
+// We can expand this right now
 #define BLACK   0
 #define RED     1
 #define GREEN   2
@@ -92,11 +99,11 @@ void drawPixel(int x, int y, char color) {
     // Which pixel is it?
     int pixel = ((640 * y) + x) ;
 
-    // Is this pixel stored in the first 3 bits
+    // Is this pixel stored in the first 4 bits
     // of the vga data array index, or the second
-    // 3 bits? Check, then mask.
+    // 4 bits? Check, then mask.
     if (pixel & 1) {
-        vga_data_array[pixel>>1] = (vga_data_array[pixel>>1] & TOPMASK) | (color << 3) ;
+        vga_data_array[pixel>>1] = (vga_data_array[pixel>>1] & TOPMASK) | (color << 4) ;
     }
     else {
         vga_data_array[pixel>>1] = (vga_data_array[pixel>>1] & BOTTOMMASK) | (color) ;
@@ -358,8 +365,8 @@ uint8_t read_fifo_slow(ArduCAM myCAM)
     // myCAM.CS_LOW();
     // myCAM.set_fifo_burst();  // Set fifo burst mode
     
-    for (int m=0; m<240; m++) {
-        for (int n=0; n<320; n++) {
+    for (int m=0; m<480; m++) {
+        for (int n=0; n<640; n++) {
             char tmp_byte[2];
             myCAM.CS_LOW();
             myCAM.set_fifo_burst();  // Set fifo burst mode
@@ -367,15 +374,10 @@ uint8_t read_fifo_slow(ArduCAM myCAM)
             myCAM.CS_HIGH();
             // printf("%x %x \n",tmp_byte[1],tmp_byte[2]);
             char color = 0;
-            // color = color | ((( tmp_byte[1] >> 4 ) & 0x01) << 0);
-            // color = color | ((( tmp_byte[0] >> 4 ) & 0x01) << 1);
-            // color = color | ((( tmp_byte[0] >> 7 ) & 0x01) << 2);
             color = color | ((( tmp_byte[0] >> 3 ) > 16) << 0);  // red
-            color = color | ((( tmp_byte[0] & 0x07 ) > 3) << 1);  // green
-            color = color | ((( tmp_byte[1] & 0x1f ) > 16) << 2);  // blue
-            // color = color | (( tmp_byte[1] & 0x01 ) << 0);  // red
-            // color = color | ((( tmp_byte[1] >> 5 ) & 0x01 ) << 1);  // green
-            // color = color | ((( tmp_byte[0] >> 3 ) & 0x01 ) << 2);  // blue
+            color = color | ((( tmp_byte[0] & 0x07 ) > 3) << 1);  // green 0
+            color = color | ((( tmp_byte[0] & 0x03 ) > 1) << 2);  // green 1
+            color = color | ((( tmp_byte[1] & 0x1f ) > 16) << 3);  // blue
             // printf("%d", color);
             // 2 blue 1 green 0 red
             drawPixel(n, m, color);
@@ -386,77 +388,3 @@ uint8_t read_fifo_slow(ArduCAM myCAM)
     // myCAM.CS_HIGH();
     return 1;
 }
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////
-    // ===================================== Mandelbrot =================================================
-    /////////////////////////////////////////////////////////////////////////////////////////////////////
-    // uint64_t begin_time ;
-    // uint64_t end_time ;
-    // while (true) {
-
-    //     // x values
-    //     for (i=0; i<640; i++) {
-    //         x[i] = float2fix28(-2.0f + 3.0f * (float)i/640.0f) ;
-    //     }
-        
-    //     // y values
-    //     for (j=0; j<480; j++) {
-    //         y[j] = float2fix28( 1.0f - 2.0f * (float)j/480.0f) ;
-    //     }
-
-    //     total_count = 0 ;
-    //     fix28 center = float2fix28(-0.25f);
-    //     fix28 radius2 = float2fix28(0.25f);
-
-    //     begin_time = time_us_64() ;
-
-    //     for (i=0; i<640; i++) {
-            
-    //         for (j=0; j<480; j++) {
-
-    //             Zre = Zre_sq = Zim = Zim_sq = 0 ;
-
-    //             Cre = x[i] ;
-    //             Cim = y[j] ;
-
-    //             // detect secondary bulb
-    //             // if ((multfix28(Cre+ONEfix28,Cre+ONEfix28)+multfix28(Cim,Cim))<SIXTEENTHfix28) {
-    //             //     count=max_count;
-    //             // }
-    //             // // detect big circle
-    //             // else if ((multfix28(Cre-center,Cre-center)+multfix28(Cim,Cim))<radius2) {
-    //             //     count=max_count;
-    //             // }
-    //             // // otherwise get ready to iterate
-    //             // else count = 0;
-    //             count = 0 ;
-
-    //             // Mandelbrot iteration
-    //             while (count++ < max_count) {
-    //                 Zim = (multfix28(Zre, Zim)<<1) + Cim ;
-    //                 Zre = Zre_sq - Zim_sq + Cre ;
-    //                 Zre_sq = multfix28(Zre, Zre) ;
-    //                 Zim_sq = multfix28(Zim, Zim) ;
-
-    //                 if ((Zre_sq + Zim_sq) >= FOURfix28) break ;
-    //             }
-    //             // Increment total count
-    //             total_count += count ;
-
-    //             // Draw the pixel
-    //             if (count >= max_count) drawPixel(i, j, BLACK) ;
-    //             else if (count >= (max_count>>1)) drawPixel(i, j, WHITE) ;
-    //             else if (count >= (max_count>>2)) drawPixel(i, j, CYAN) ;
-    //             else if (count >= (max_count>>3)) drawPixel(i, j, BLUE) ;
-    //             else if (count >= (max_count>>4)) drawPixel(i, j, RED) ;
-    //             else if (count >= (max_count>>5)) drawPixel(i, j, YELLOW) ;
-    //             else if (count >= (max_count>>6)) drawPixel(i, j, MAGENTA) ;
-    //             else drawPixel(i, j, RED) ;
-
-    //         }
-    //     }
-
-    //     end_time = time_us_64() ;
-    //     printf("Total time: %3.6f seconds \n", (float)(end_time - begin_time)*(1./1000000.)) ;
-    //     printf("Total iterations: %d", total_count) ;
-    // }

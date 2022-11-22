@@ -1364,9 +1364,9 @@ Discarded input sections
                 0x0000000000000000       0x50 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_read16_blocking
                 0x0000000000000000       0x74 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .text          0x0000000000000000        0x0 /tmp/cciWXIXL.o
- .data          0x0000000000000000        0x0 /tmp/cciWXIXL.o
- .bss           0x0000000000000000        0x0 /tmp/cciWXIXL.o
+ .text          0x0000000000000000        0x0 /tmp/ccXtarmA.o
+ .data          0x0000000000000000        0x0 /tmp/ccXtarmA.o
+ .bss           0x0000000000000000        0x0 /tmp/ccXtarmA.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1630,11 +1630,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cciWXIXL.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccXtarmA.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x8800
+.text           0x0000000010000100     0x8818
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1700,678 +1700,679 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x000000001000035c      0x110 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
                 0x000000001000035c                cam_init()
  .text._Z14read_fifo_slow7ArduCAM
-                0x000000001000046c       0xc0 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+                0x000000001000046c       0xcc CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
                 0x000000001000046c                read_fifo_slow(ArduCAM)
  .text.startup.main
-                0x000000001000052c      0x20c CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
-                0x000000001000052c                main
+                0x0000000010000538      0x214 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+                0x0000000010000538                main
  .text.startup._GLOBAL__sub_I_vga_data_array
-                0x0000000010000738       0x14 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+                0x000000001000074c       0x14 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
  .text.gpio_set_function
-                0x000000001000074c       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x000000001000074c                gpio_set_function
+                0x0000000010000760       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000760                gpio_set_function
  .text.gpio_set_pulls
-                0x000000001000077c       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x000000001000077c                gpio_set_pulls
+                0x0000000010000790       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000790                gpio_set_pulls
  .text.gpio_init
-                0x00000000100007ac       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100007ac                gpio_init
+                0x00000000100007c0       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100007c0                gpio_init
  .text.hw_claim_lock
-                0x00000000100007e8       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100007e8                hw_claim_lock
+                0x00000000100007fc       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100007fc                hw_claim_lock
  .text.hw_claim_unlock
-                0x0000000010000800       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000800                hw_claim_unlock
+                0x0000000010000814       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000814                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x0000000010000814       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000814                hw_claim_or_assert
+                0x0000000010000828       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000828                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x000000001000085c       0x9c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x000000001000085c                hw_claim_unused_from_range
+                0x0000000010000870       0x9c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000870                hw_claim_unused_from_range
  .text.running_on_fpga
-                0x00000000100008f8       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x00000000100008f8                running_on_fpga
+                0x000000001000090c       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x000000001000090c                running_on_fpga
  .text.spin_locks_reset
-                0x0000000010000908       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000908                spin_locks_reset
+                0x000000001000091c       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000001000091c                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010000924       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000924                next_striped_spin_lock_num
+                0x0000000010000938       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000938                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x000000001000093c       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x000000001000093c                spin_lock_claim_unused
+                0x0000000010000950       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000950                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x000000001000095c       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000095c                irq_set_enabled
+                0x0000000010000970       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000970                irq_set_enabled
  .text.irq_set_pending
-                0x0000000010000980       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000980                irq_set_pending
+                0x0000000010000994       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000994                irq_set_pending
  .text.irq_has_shared_handler
-                0x0000000010000990       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000990                irq_has_shared_handler
+                0x00000000100009a4       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100009a4                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x00000000100009bc       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100009bc                irq_get_vtable_handler
+                0x00000000100009d0       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100009d0                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100009cc       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100009cc                irq_set_exclusive_handler
+                0x00000000100009e0       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100009e0                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x0000000010000a20      0x1c0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000a20                irq_add_shared_handler
+                0x0000000010000a34      0x1c0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000a34                irq_add_shared_handler
  .text.irq_remove_handler
-                0x0000000010000be0      0x1b4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000be0                irq_remove_handler
+                0x0000000010000bf4      0x1b4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000bf4                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010000d94       0xb8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000d94                irq_add_tail_to_free_list
+                0x0000000010000da8       0xb8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000da8                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010000e4c       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000e4c                irq_init_priorities
+                0x0000000010000e60       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000e60                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010000e70       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000e70                user_irq_claim_unused
+                0x0000000010000e84       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000e84                user_irq_claim_unused
  .text.lock_init
-                0x0000000010000ea0       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010000ea0                lock_init
+                0x0000000010000eb4       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000eb4                lock_init
  .text.timer_pool_entry_comparator
-                0x0000000010000eb0       0x34 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000eb0                timer_pool_entry_comparator
+                0x0000000010000ec4       0x34 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ec4                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010000ee4       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ef8       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x0000000010000f14      0x128 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f28      0x128 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock
-                0x000000001000103c      0x108 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001050      0x108 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010001144      0x1c8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001158      0x1c8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x000000001000130c       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
-                0x000000001000130c                alarm_pool_init_default
+                0x0000000010001320       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001320                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010001370        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001370                alarm_pool_get_default
+                0x0000000010001384        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001384                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010001378      0x1ac CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001378                alarm_pool_add_alarm_at
+                0x000000001000138c      0x1ac CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000138c                alarm_pool_add_alarm_at
  .text.sleep_until
-                0x0000000010001524       0xac CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001524                sleep_until
+                0x0000000010001538       0xac CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001538                sleep_until
  .text.sleep_ms
-                0x00000000100015d0       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100015d0                sleep_ms
+                0x00000000100015e4       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100015e4                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x0000000010001608       0xd4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001608                best_effort_wfe_or_timeout
+                0x000000001000161c       0xd4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000161c                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x00000000100016dc       0xb8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100016f0       0xb8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010001794       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001794                hardware_alarm_claim
+                0x00000000100017a8       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100017a8                hardware_alarm_claim
  .text.time_us_64
-                0x00000000100017ac       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100017ac                time_us_64
+                0x00000000100017c0       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100017c0                time_us_64
  .text.busy_wait_us
-                0x00000000100017c0       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100017c0                busy_wait_us
+                0x00000000100017d4       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100017d4                busy_wait_us
  .text.busy_wait_until
-                0x0000000010001814       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001814                busy_wait_until
+                0x0000000010001828       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001828                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x0000000010001834       0x8c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001834                hardware_alarm_set_callback
+                0x0000000010001848       0x8c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001848                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x00000000100018c0       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100018c0                hardware_alarm_set_target
+                0x00000000100018d4       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100018d4                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x00000000100019a4       0x40 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100019a4                hardware_alarm_cancel
+                0x00000000100019b8       0x40 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100019b8                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x00000000100019e4       0x68 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100019f8       0x68 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000010001a4c       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001a4c                ph_post_alloc_init
+                0x0000000010001a60       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001a60                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001a88       0x90 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001a88                ph_merge_two_pass
+                0x0000000010001a9c       0x90 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001a9c                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001b18       0xf8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001b2c       0xf8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001c10      0x13c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001c10                ph_remove_head
+                0x0000000010001c24      0x13c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001c24                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010001d4c       0x7c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001d4c                ph_remove_and_free_node
+                0x0000000010001d60       0x7c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001d60                ph_remove_and_free_node
  .text.mutex_init
-                0x0000000010001dc8       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001dc8                mutex_init
+                0x0000000010001ddc       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001ddc                mutex_init
  .text.recursive_mutex_init
-                0x0000000010001de4       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001de4                recursive_mutex_init
+                0x0000000010001df8       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001df8                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010001e00       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010001e00                critical_section_init
+                0x0000000010001e14       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010001e14                critical_section_init
  .text.uart_init
-                0x0000000010001e1c       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000010001e1c                uart_init
+                0x0000000010001e30       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x0000000010001e30                uart_init
  .text.runtime_init
-                0x0000000010001f00       0xf0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001f00                runtime_init
- .text.exit     0x0000000010001ff0        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001ff0                exit
- .text.panic    0x0000000010001ff4       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001ff4                panic
+                0x0000000010001f14       0xf0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001f14                runtime_init
+ .text.exit     0x0000000010002004        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002004                exit
+ .text.panic    0x0000000010002008       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002008                panic
  .text.hard_assertion_failure
-                0x0000000010002024        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002024                hard_assertion_failure
+                0x0000000010002038        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002038                hard_assertion_failure
  .text.clocks_init
-                0x0000000010002030      0x2bc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010002030                clocks_init
+                0x0000000010002044      0x2bc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010002044                clocks_init
  .text.clock_get_hz
-                0x00000000100022ec        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100022ec                clock_get_hz
+                0x0000000010002300        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010002300                clock_get_hz
  .text.pll_init
-                0x00000000100022f8       0xa8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100022f8                pll_init
+                0x000000001000230c       0xa8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x000000001000230c                pll_init
  .text.watchdog_start_tick
-                0x00000000100023a0       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x00000000100023a0                watchdog_start_tick
+                0x00000000100023b4       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x00000000100023b4                watchdog_start_tick
  .text.watchdog_reboot
-                0x00000000100023b0       0x98 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x00000000100023b0                watchdog_reboot
+                0x00000000100023c4       0x98 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x00000000100023c4                watchdog_reboot
  .text.xosc_init
-                0x0000000010002448       0x28 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010002448                xosc_init
+                0x000000001000245c       0x28 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x000000001000245c                xosc_init
  .text._out_null
-                0x0000000010002470        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002484        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000010002474       0xd0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002488       0xd0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010002544      0x1d0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002558      0x1d0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010002714       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002728       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000010002724       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000010002734      0x478 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000010002bac      0x3e0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002738       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000010002748      0x478 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000010002bc0      0x3e0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000010002f8c      0xb08 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002fa0      0xb08 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x0000000010003a94       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003a94                vfctprintf
+                0x0000000010003aa8       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003aa8                vfctprintf
  .text.weak_raw_vprintf
-                0x0000000010003ab4       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003ab4                weak_raw_vprintf
- .text          0x0000000010003ae4       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010003ac8       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003ac8                weak_raw_vprintf
+ .text          0x0000000010003af8       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010003af4       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003af4                rom_func_lookup
+                0x0000000010003b08       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003b08                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010003b04       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003b04                rom_data_lookup
+                0x0000000010003b18       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003b18                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010003b14       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003b14                rom_funcs_lookup
+                0x0000000010003b28       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003b28                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x0000000010003b50       0x50 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003b50                __wrap___aeabi_idivmod
-                0x0000000010003b50                divmod_s32s32
-                0x0000000010003b50                div_s32s32
-                0x0000000010003b50                __wrap___aeabi_idiv
-                0x0000000010003b58                divmod_s32s32_unsafe
-                0x0000000010003b84                divmod_s32s32_savestate
+                0x0000000010003b64       0x50 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003b64                __wrap___aeabi_idivmod
+                0x0000000010003b64                divmod_s32s32
+                0x0000000010003b64                div_s32s32
+                0x0000000010003b64                __wrap___aeabi_idiv
+                0x0000000010003b6c                divmod_s32s32_unsafe
+                0x0000000010003b98                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010003ba0       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003ba0                __wrap___aeabi_uidiv
-                0x0000000010003ba0                __wrap___aeabi_uidivmod
-                0x0000000010003ba0                div_u32u32
-                0x0000000010003ba0                divmod_u32u32
-                0x0000000010003ba8                divmod_u32u32_unsafe
-                0x0000000010003bd0                divmod_u32u32_savestate
+                0x0000000010003bb4       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003bb4                __wrap___aeabi_uidiv
+                0x0000000010003bb4                __wrap___aeabi_uidivmod
+                0x0000000010003bb4                div_u32u32
+                0x0000000010003bb4                divmod_u32u32
+                0x0000000010003bbc                divmod_u32u32_unsafe
+                0x0000000010003be4                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x0000000010003bec      0x434 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003bec                div_s64s64
-                0x0000000010003bec                divmod_s64s64
-                0x0000000010003bec                __wrap___aeabi_ldivmod
-                0x0000000010003c24                div_u64u64
-                0x0000000010003c24                divmod_u64u64
-                0x0000000010003c24                __wrap___aeabi_uldivmod
-                0x0000000010003c34                divmod_u64u64_savestate
-                0x0000000010003c5c                divmod_s64s64_unsafe
-                0x0000000010003ce4                divmod_u64u64_unsafe
+                0x0000000010003c00      0x434 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003c00                div_s64s64
+                0x0000000010003c00                divmod_s64s64
+                0x0000000010003c00                __wrap___aeabi_ldivmod
+                0x0000000010003c38                div_u64u64
+                0x0000000010003c38                divmod_u64u64
+                0x0000000010003c38                __wrap___aeabi_uldivmod
+                0x0000000010003c48                divmod_u64u64_savestate
+                0x0000000010003c70                divmod_s64s64_unsafe
+                0x0000000010003cf8                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010004020       0x80 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004020                __wrap___aeabi_drsub
-                0x0000000010004026                __wrap___aeabi_dsub
-                0x0000000010004038                __wrap___aeabi_dadd
-                0x000000001000404a                __wrap___aeabi_ddiv
-                0x0000000010004086                __wrap___aeabi_dmul
+                0x0000000010004034       0x80 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004034                __wrap___aeabi_drsub
+                0x000000001000403a                __wrap___aeabi_dsub
+                0x000000001000404c                __wrap___aeabi_dadd
+                0x000000001000405e                __wrap___aeabi_ddiv
+                0x000000001000409a                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x00000000100040a0       0x6c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100040a0                __wrap___aeabi_cdrcmple
-                0x00000000100040b0                __wrap___aeabi_cdcmple
-                0x00000000100040b0                __wrap___aeabi_cdcmpeq
+                0x00000000100040b4       0x6c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100040b4                __wrap___aeabi_cdrcmple
+                0x00000000100040c4                __wrap___aeabi_cdcmple
+                0x00000000100040c4                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x000000001000410c        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x000000001000410c                __wrap___aeabi_dcmplt
+                0x0000000010004120        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004120                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000010004118       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004118                __wrap___aeabi_dcmple
+                0x000000001000412c       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000000001000412c                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000010004128       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004128                __wrap___aeabi_dcmpge
+                0x000000001000413c       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000000001000413c                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010004138        0xa CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004138                __wrap___aeabi_dcmpgt
+                0x000000001000414c        0xa CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x000000001000414c                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000010004142       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004142                __wrap___aeabi_dcmpun
- *fill*         0x000000001000415e        0x2 
+                0x0000000010004156       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004156                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010004172        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010004160       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004160                __wrap___aeabi_ui2d
-                0x0000000010004168                __wrap___aeabi_i2d
+                0x0000000010004174       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004174                __wrap___aeabi_ui2d
+                0x000000001000417c                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010004198       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010004198                __wrap___aeabi_d2iz
-                0x0000000010004198                double2int_z
+                0x00000000100041ac       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100041ac                __wrap___aeabi_d2iz
+                0x00000000100041ac                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x00000000100041e0       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x00000000100041e0                double2uint
-                0x00000000100041e0                __wrap___aeabi_d2uiz
+                0x00000000100041f4       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100041f4                double2uint
+                0x00000000100041f4                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x00000000100041f8       0xc0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x00000000100041f8                __aeabi_double_init
+                0x000000001000420c       0xc0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x000000001000420c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x00000000100042b8       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100042b8                double_table_shim_on_use_helper
+                0x00000000100042cc       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100042cc                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x00000000100042e4       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100042e4                drsub_shim
-                0x00000000100042ea                dsub_shim
+                0x00000000100042f8       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100042f8                drsub_shim
+                0x00000000100042fe                dsub_shim
  .text.dadd_shim
-                0x00000000100042f4      0x15c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100042f4                dadd_shim
+                0x0000000010004308      0x15c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004308                dadd_shim
  .text.dmul_shim
-                0x0000000010004450      0x15c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004450                dmul_shim
+                0x0000000010004464      0x15c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004464                dmul_shim
  .text.ddiv_shim
-                0x00000000100045ac      0x1b0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100045ac                ddiv_shim
+                0x00000000100045c0      0x1b0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100045c0                ddiv_shim
  .text.double2uint_shim
-                0x000000001000475c        0xe CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000475c                double2uint_shim
-                0x000000001000475e                double2ufix_shim
- *fill*         0x000000001000476a        0x2 
+                0x0000000010004770        0xe CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004770                double2uint_shim
+                0x0000000010004772                double2ufix_shim
+ *fill*         0x000000001000477e        0x2 
  .text.double2uint64_shim
-                0x000000001000476c       0x70 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x000000001000476c                double2uint64_shim
-                0x000000001000476e                double2ufix64_shim
-                0x000000001000478e                d2fix_a
+                0x0000000010004780       0x70 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004780                double2uint64_shim
+                0x0000000010004782                double2ufix64_shim
+                0x00000000100047a2                d2fix_a
  .text.dunpacks
-                0x00000000100047dc       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100047dc                dunpacks
+                0x00000000100047f0       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100047f0                dunpacks
  .text.__aeabi_lmul
-                0x0000000010004818       0x32 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010004818                __wrap___aeabi_lmul
- *fill*         0x000000001000484a        0x2 
+                0x000000001000482c       0x32 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x000000001000482c                __wrap___aeabi_lmul
+ *fill*         0x000000001000485e        0x2 
  .text.__aeabi_float_init
-                0x000000001000484c       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x000000001000484c                __aeabi_float_init
+                0x0000000010004860       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010004860                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x00000000100048b0       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x00000000100048b0                float_table_shim_on_use_helper
- .text          0x00000000100048dc       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100048dc                __aeabi_mem_init
- .text.memset   0x00000000100048ec        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100048ec                __wrap_memset
- .text.memcpy   0x00000000100048f8        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100048f8                __wrap___aeabi_memcpy
-                0x00000000100048f8                __wrap_memcpy
+                0x00000000100048c4       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100048c4                float_table_shim_on_use_helper
+ .text          0x00000000100048f0       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100048f0                __aeabi_mem_init
+ .text.memset   0x0000000010004900        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004900                __wrap_memset
+ .text.memcpy   0x000000001000490c        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000001000490c                __wrap___aeabi_memcpy
+                0x000000001000490c                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010004904       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004918       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010004914       0x94 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004928       0x94 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x00000000100049a8       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100049bc       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x0000000010004a0c      0x100 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004a20      0x100 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010004b0c       0xa4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004b0c                __wrap_putchar
+                0x0000000010004b20       0xa4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004b20                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010004bb0       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004bb0                __wrap_puts
+                0x0000000010004bc4       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004bc4                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010004bec       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004bec                stdio_set_driver_enabled
+                0x0000000010004c00       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004c00                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x0000000010004c1c       0xd8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004c1c                __wrap_vprintf
+                0x0000000010004c30       0xd8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004c30                __wrap_vprintf
  .text.__wrap_printf
-                0x0000000010004cf4       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004cf4                __wrap_printf
+                0x0000000010004d08       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004d08                __wrap_printf
  .text.stdio_init_all
-                0x0000000010004d0c        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004d0c                stdio_init_all
+                0x0000000010004d20        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004d20                stdio_init_all
  .text.stdio_uart_out_chars
-                0x0000000010004d18       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010004d2c       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x0000000010004d64       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010004d64                stdio_uart_in_chars
+                0x0000000010004d78       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010004d78                stdio_uart_in_chars
  .text.stdio_uart_init
-                0x0000000010004d9c       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010004d9c                stdio_uart_init
+                0x0000000010004db0       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010004db0                stdio_uart_init
  .text.resetd_init
-                0x0000000010004de4        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004df8        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x0000000010004de8        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004dfc        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x0000000010004df4       0x28 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004e08       0x28 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x0000000010004e1c        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004e30        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x0000000010004e20       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004e34       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010004e84        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004e84                usbd_app_driver_get_cb
+                0x0000000010004e98        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004e98                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010004e90       0x34 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004e90                tud_cdc_line_coding_cb
+                0x0000000010004ea4       0x34 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004ea4                tud_cdc_line_coding_cb
  .text.stdio_usb_in_chars
-                0x0000000010004ec4       0x68 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004ec4                stdio_usb_in_chars
+                0x0000000010004ed8       0x68 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004ed8                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004f2c       0xec CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004f40       0xec CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010005018       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .text.usb_irq  0x0000000010005030       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000502c       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .text.usb_irq  0x0000000010005044       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010005040       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010005054       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_init
-                0x0000000010005064       0xb0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010005064                stdio_usb_init
+                0x0000000010005078       0xb0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010005078                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010005114        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010005114                tud_descriptor_device_cb
+                0x0000000010005128        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010005128                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x000000001000511c        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x000000001000511c                tud_descriptor_configuration_cb
+                0x0000000010005130        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010005130                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010005124       0x70 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010005124                tud_descriptor_string_cb
+                0x0000000010005138       0x70 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010005138                tud_descriptor_string_cb
  .text.dcd_rp2040_irq
-                0x0000000010005194      0x21c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100051a8      0x21c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x00000000100053b0        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100053b0                dcd_int_enable
+                0x00000000100053c4        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100053c4                dcd_int_enable
  .text.dcd_set_address
-                0x00000000100053bc       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100053bc                dcd_set_address
+                0x00000000100053d0       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100053d0                dcd_set_address
  .text.dcd_connect
-                0x00000000100053d0       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100053d0                dcd_connect
+                0x00000000100053e4       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100053e4                dcd_connect
  .text.dcd_init
-                0x00000000100053e0      0x148 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100053e0                dcd_init
+                0x00000000100053f4      0x148 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100053f4                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010005528       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005528                dcd_edpt0_status_complete
+                0x000000001000553c       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000000001000553c                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000010005544       0xf0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005544                dcd_edpt_open
+                0x0000000010005558       0xf0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005558                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x0000000010005634       0xbc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005634                dcd_edpt_close_all
+                0x0000000010005648       0xbc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005648                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x00000000100056f0       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100056f0                dcd_edpt_xfer
+                0x0000000010005704       0x24 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005704                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010005714       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010005714                dcd_edpt_stall
+                0x0000000010005728       0x38 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005728                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x000000001000574c       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000574c                dcd_edpt_clear_stall
+                0x0000000010005760       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005760                dcd_edpt_clear_stall
  .text._hw_endpoint_buffer_control_update32.part.0
-                0x000000001000577c       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005790       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .text.rp2040_usb_init
-                0x000000001000579c       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000001000579c                rp2040_usb_init
+                0x00000000100057b0       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100057b0                rp2040_usb_init
  .text.hw_endpoint_reset_transfer
-                0x00000000100057e8        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100057e8                hw_endpoint_reset_transfer
+                0x00000000100057fc        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100057fc                hw_endpoint_reset_transfer
  .text._hw_endpoint_buffer_control_update32
-                0x00000000100057f4       0x40 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100057f4                _hw_endpoint_buffer_control_update32
+                0x0000000010005808       0x40 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005808                _hw_endpoint_buffer_control_update32
  .text.hw_endpoint_xfer_start
-                0x0000000010005834      0x138 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010005834                hw_endpoint_xfer_start
+                0x0000000010005848      0x138 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005848                hw_endpoint_xfer_start
  .text.hw_endpoint_xfer_continue
-                0x000000001000596c      0x1e4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000001000596c                hw_endpoint_xfer_continue
+                0x0000000010005980      0x1e4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005980                hw_endpoint_xfer_continue
  .text.tud_mounted
-                0x0000000010005b50       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005b50                tud_mounted
+                0x0000000010005b64       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b64                tud_mounted
  .text.tud_suspended
-                0x0000000010005b60       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005b60                tud_suspended
+                0x0000000010005b74       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b74                tud_suspended
  .text.tud_inited
-                0x0000000010005b70        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005b70                tud_inited
+                0x0000000010005b84        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b84                tud_inited
  .text.tud_init
-                0x0000000010005b7c       0xd8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005b7c                tud_init
+                0x0000000010005b90       0xd8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b90                tud_init
  .text.tud_task
-                0x0000000010005c54      0x8ec CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005c54                tud_task
+                0x0000000010005c68      0x8ec CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005c68                tud_task
  .text.dcd_event_bus_signal
-                0x0000000010006540      0x120 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006540                dcd_event_bus_signal
+                0x0000000010006554      0x120 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006554                dcd_event_bus_signal
  .text.dcd_event_bus_reset
-                0x0000000010006660       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006660                dcd_event_bus_reset
+                0x0000000010006674       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006674                dcd_event_bus_reset
  .text.dcd_event_setup_received
-                0x00000000100066b4       0x50 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100066b4                dcd_event_setup_received
+                0x00000000100066c8       0x50 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100066c8                dcd_event_setup_received
  .text.dcd_event_xfer_complete
-                0x0000000010006704       0x68 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006704                dcd_event_xfer_complete
+                0x0000000010006718       0x68 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006718                dcd_event_xfer_complete
  .text.usbd_open_edpt_pair
-                0x000000001000676c       0x80 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000676c                usbd_open_edpt_pair
+                0x0000000010006780       0x80 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006780                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x00000000100067ec       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100067ec                usbd_edpt_open
+                0x0000000010006800       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006800                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x000000001000681c       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000681c                usbd_edpt_claim
+                0x0000000010006830       0x64 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006830                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010006880       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006880                usbd_edpt_release
+                0x0000000010006894       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006894                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x00000000100068cc       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100068cc                usbd_edpt_xfer
+                0x00000000100068e0       0x48 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100068e0                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010006914       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006914                tud_control_status
+                0x0000000010006928       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006928                tud_control_status
  .text.tud_control_xfer
-                0x0000000010006944       0xb8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006944                tud_control_xfer
+                0x0000000010006958       0xb8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006958                tud_control_xfer
  .text.usbd_control_reset
-                0x00000000100069fc       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x00000000100069fc                usbd_control_reset
+                0x0000000010006a10       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006a10                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010006a10        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006a10                usbd_control_set_complete_callback
+                0x0000000010006a24        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006a24                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010006a1c       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006a1c                usbd_control_set_request
+                0x0000000010006a30       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006a30                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010006a38       0xf8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006a38                usbd_control_xfer_cb
+                0x0000000010006a4c       0xf8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006a4c                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010006b30       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006b30                tud_cdc_n_connected
+                0x0000000010006b44       0x30 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006b44                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010006b60       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006b60                tud_cdc_n_available
+                0x0000000010006b74       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006b74                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010006b78       0x70 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006b78                tud_cdc_n_read
+                0x0000000010006b8c       0x70 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006b8c                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010006be8       0x78 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006be8                tud_cdc_n_write_flush
+                0x0000000010006bfc       0x78 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006bfc                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x0000000010006c60       0x34 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006c60                tud_cdc_n_write
+                0x0000000010006c74       0x34 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006c74                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x0000000010006c94       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006c94                tud_cdc_n_write_available
+                0x0000000010006ca8       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006ca8                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000010006cac       0x7c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006cac                cdcd_init
+                0x0000000010006cc0       0x7c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006cc0                cdcd_init
  .text.cdcd_reset
-                0x0000000010006d28       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006d28                cdcd_reset
+                0x0000000010006d3c       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006d3c                cdcd_reset
  .text.cdcd_open
-                0x0000000010006d54       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006d54                cdcd_open
+                0x0000000010006d68       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006d68                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010006e38       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006e38                cdcd_control_xfer_cb
+                0x0000000010006e4c       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006e4c                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x0000000010006f1c      0x198 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006f1c                cdcd_xfer_cb
+                0x0000000010006f30      0x198 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006f30                cdcd_xfer_cb
  .text.tusb_init
-                0x00000000100070b4        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100070b4                tusb_init
+                0x00000000100070c8        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100070c8                tusb_init
  .text.tusb_inited
-                0x00000000100070c0        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100070c0                tusb_inited
+                0x00000000100070d4        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100070d4                tusb_inited
  .text.tu_edpt_validate
-                0x00000000100070c8       0x78 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100070c8                tu_edpt_validate
+                0x00000000100070dc       0x78 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100070dc                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010007140       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010007140                tu_edpt_bind_driver
+                0x0000000010007154       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010007154                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x000000001000716c       0x78 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000716c                tu_fifo_config
+                0x0000000010007180       0x78 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007180                tu_fifo_config
  .text.tu_fifo_count
-                0x00000000100071e4       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100071e4                tu_fifo_count
+                0x00000000100071f8       0x20 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100071f8                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010007204       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007204                tu_fifo_empty
+                0x0000000010007218       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007218                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x0000000010007214       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007214                tu_fifo_remaining
+                0x0000000010007228       0x1c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007228                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010007230       0x9c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007230                tu_fifo_read
+                0x0000000010007244       0x9c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007244                tu_fifo_read
  .text.tu_fifo_read_n
-                0x00000000100072cc      0x100 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100072cc                tu_fifo_read_n
+                0x00000000100072e0      0x100 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100072e0                tu_fifo_read_n
  .text.tu_fifo_write
-                0x00000000100073cc       0x7c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100073cc                tu_fifo_write
+                0x00000000100073e0       0x7c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100073e0                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010007448       0xf8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007448                tu_fifo_write_n
+                0x000000001000745c       0xf8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000745c                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010007540       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010007540                tu_fifo_clear
+                0x0000000010007554       0x4c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010007554                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x000000001000758c       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000758c                tu_fifo_set_overwritable
+                0x00000000100075a0       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100075a0                tu_fifo_set_overwritable
  .text.startup._retrieve_unique_id_on_boot
-                0x00000000100075c8       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000100075dc       0x10 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x00000000100075d8      0x1bc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x00000000100075d8                pico_get_unique_board_id_string
+                0x00000000100075ec      0x1bc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000100075ec                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000010007794       0x40 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010007794                flash_get_unique_id
+                0x00000000100077a8       0x40 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x00000000100077a8                flash_get_unique_id
  .text.pio_add_program
-                0x00000000100077d4       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x00000000100077d4                pio_add_program
+                0x00000000100077e8       0xe4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x00000000100077e8                pio_add_program
  .text.pio_sm_set_consecutive_pindirs
-                0x00000000100078b8       0x88 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x00000000100078b8                pio_sm_set_consecutive_pindirs
+                0x00000000100078cc       0x88 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x00000000100078cc                pio_sm_set_consecutive_pindirs
  .text.pio_sm_init
-                0x0000000010007940       0x90 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x0000000010007940                pio_sm_init
+                0x0000000010007954       0x90 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x0000000010007954                pio_sm_init
  .text.startup.boot_double_tap_check
-                0x00000000100079d0       0x60 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+                0x00000000100079e4       0x60 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
  .text.i2c_set_baudrate
-                0x0000000010007a30       0xc4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010007a30                i2c_set_baudrate
+                0x0000000010007a44       0xc4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010007a44                i2c_set_baudrate
  .text.i2c_init
-                0x0000000010007af4       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010007af4                i2c_init
+                0x0000000010007b08       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010007b08                i2c_init
  .text.i2c_write_blocking
-                0x0000000010007b48       0xd8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010007b48                i2c_write_blocking
+                0x0000000010007b5c       0xd8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010007b5c                i2c_write_blocking
  .text.i2c_read_blocking
-                0x0000000010007c20       0x9c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010007c20                i2c_read_blocking
+                0x0000000010007c34       0x9c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010007c34                i2c_read_blocking
  .text._ZN7ArduCAMC2Ehi
-                0x0000000010007cbc       0x34 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010007cbc                ArduCAM::ArduCAM(unsigned char, int)
-                0x0000000010007cbc                ArduCAM::ArduCAM(unsigned char, int)
+                0x0000000010007cd0       0x34 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010007cd0                ArduCAM::ArduCAM(unsigned char, int)
+                0x0000000010007cd0                ArduCAM::ArduCAM(unsigned char, int)
  .text._ZN7ArduCAM7InitCAMEv
-                0x0000000010007cf0      0x6a0 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010007cf0                ArduCAM::InitCAM()
+                0x0000000010007d04      0x6a0 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010007d04                ArduCAM::InitCAM()
  .text._ZN7ArduCAM7CS_HIGHEv
-                0x0000000010008390       0x10 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010008390                ArduCAM::CS_HIGH()
+                0x00000000100083a4       0x10 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100083a4                ArduCAM::CS_HIGH()
  .text._ZN7ArduCAM6CS_LOWEv
-                0x00000000100083a0       0x10 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100083a0                ArduCAM::CS_LOW()
+                0x00000000100083b4       0x10 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100083b4                ArduCAM::CS_LOW()
  .text._ZN7ArduCAM10flush_fifoEv
-                0x00000000100083b0       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100083b0                ArduCAM::flush_fifo()
+                0x00000000100083c4       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100083c4                ArduCAM::flush_fifo()
  .text._ZN7ArduCAM13start_captureEv
-                0x00000000100083e8       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100083e8                ArduCAM::start_capture()
+                0x00000000100083fc       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100083fc                ArduCAM::start_capture()
  .text._ZN7ArduCAM15clear_fifo_flagEv
-                0x0000000010008420       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010008420                ArduCAM::clear_fifo_flag()
+                0x0000000010008434       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010008434                ArduCAM::clear_fifo_flag()
  .text._ZN7ArduCAM8read_regEh
-                0x0000000010008458       0x50 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010008458                ArduCAM::read_reg(unsigned char)
+                0x000000001000846c       0x50 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x000000001000846c                ArduCAM::read_reg(unsigned char)
  .text._ZN7ArduCAM9write_regEhh
-                0x00000000100084a8       0x40 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100084a8                ArduCAM::write_reg(unsigned char, unsigned char)
+                0x00000000100084bc       0x40 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100084bc                ArduCAM::write_reg(unsigned char, unsigned char)
  .text._ZN7ArduCAM16read_fifo_lengthEv
-                0x00000000100084e8       0xd4 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100084e8                ArduCAM::read_fifo_length()
+                0x00000000100084fc       0xd4 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100084fc                ArduCAM::read_fifo_length()
  .text._ZN7ArduCAM14set_fifo_burstEv
-                0x00000000100085bc       0x1c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100085bc                ArduCAM::set_fifo_burst()
+                0x00000000100085d0       0x1c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100085d0                ArduCAM::set_fifo_burst()
  .text._ZN7ArduCAM7get_bitEhh
-                0x00000000100085d8       0x5c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100085d8                ArduCAM::get_bit(unsigned char, unsigned char)
+                0x00000000100085ec       0x5c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100085ec                ArduCAM::get_bit(unsigned char, unsigned char)
  .text._ZN7ArduCAM15wrSensorReg16_8Eii
-                0x0000000010008634       0x2c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010008634                ArduCAM::wrSensorReg16_8(int, int)
+                0x0000000010008648       0x2c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010008648                ArduCAM::wrSensorReg16_8(int, int)
  .text._ZN7ArduCAM15rdSensorReg16_8EtPh
-                0x0000000010008660       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010008660                ArduCAM::rdSensorReg16_8(unsigned short, unsigned char*)
+                0x0000000010008674       0x38 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010008674                ArduCAM::rdSensorReg16_8(unsigned short, unsigned char*)
  .text._ZN7ArduCAM10set_formatEh
-                0x0000000010008698       0x18 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x0000000010008698                ArduCAM::set_format(unsigned char)
+                0x00000000100086ac       0x18 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100086ac                ArduCAM::set_format(unsigned char)
  .text._ZN7ArduCAM12Arducam_initEv
-                0x00000000100086b0       0x60 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x00000000100086b0                ArduCAM::Arducam_init()
+                0x00000000100086c4       0x60 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100086c4                ArduCAM::Arducam_init()
  .text.spi_init
-                0x0000000010008710       0xf4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x0000000010008710                spi_init
- .text          0x0000000010008804       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010008804                strlen
+                0x0000000010008724       0xf4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x0000000010008724                spi_init
+ .text          0x0000000010008818       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010008818                strlen
  *(.fini)
- .fini          0x000000001000886c        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
-                0x000000001000886c                _fini
- .fini.__stub   0x0000000010008870       0x90 linker stubs
+ .fini          0x0000000010008880        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000010008880                _fini
+ *fill*         0x0000000010008884        0x4 
+ .fini.__stub   0x0000000010008888       0x90 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2383,205 +2384,205 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010008900        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010008900                . = ALIGN (0x4)
+ .eh_frame      0x0000000010008918        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010008918                . = ALIGN (0x4)
 
-.glue_7         0x0000000010008900        0x0
- .glue_7        0x0000000010008900        0x0 linker stubs
+.glue_7         0x0000000010008918        0x0
+ .glue_7        0x0000000010008918        0x0 linker stubs
 
-.glue_7t        0x0000000010008900        0x0
- .glue_7t       0x0000000010008900        0x0 linker stubs
+.glue_7t        0x0000000010008918        0x0
+ .glue_7t       0x0000000010008918        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010008900        0x0
- .vfp11_veneer  0x0000000010008900        0x0 linker stubs
+.vfp11_veneer   0x0000000010008918        0x0
+ .vfp11_veneer  0x0000000010008918        0x0 linker stubs
 
-.v4_bx          0x0000000010008900        0x0
- .v4_bx         0x0000000010008900        0x0 linker stubs
+.v4_bx          0x0000000010008918        0x0
+ .v4_bx         0x0000000010008918        0x0 linker stubs
 
-.iplt           0x0000000010008900        0x0
- .iplt          0x0000000010008900        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010008918        0x0
+ .iplt          0x0000000010008918        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010008900     0x1ccc
+.rodata         0x0000000010008918     0x1ccc
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata._Z8cam_initv.str1.4
-                0x0000000010008900       0x70 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+                0x0000000010008918       0x70 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
  .rodata._Z15read_fifo_burst7ArduCAM.str1.4
-                0x0000000010008970        0xd CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
- *fill*         0x000000001000897d        0x3 
+                0x0000000010008988        0xd CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+ *fill*         0x0000000010008995        0x3 
  .rodata.main.str1.4
-                0x0000000010008980       0x1a CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
- *fill*         0x000000001000899a        0x2 
- .rodata._ZL11rgb_program
-                0x000000001000899c        0x6 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
- *fill*         0x00000000100089a2        0x2 
- .rodata._ZL13hsync_program
-                0x00000000100089a4        0x6 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
- *fill*         0x00000000100089aa        0x2 
- .rodata._ZL13vsync_program
-                0x00000000100089ac        0x6 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+                0x0000000010008998       0x1a CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
  *fill*         0x00000000100089b2        0x2 
+ .rodata._ZL11rgb_program
+                0x00000000100089b4        0x6 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+ *fill*         0x00000000100089ba        0x2 
+ .rodata._ZL13hsync_program
+                0x00000000100089bc        0x6 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+ *fill*         0x00000000100089c2        0x2 
+ .rodata._ZL13vsync_program
+                0x00000000100089c4        0x6 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+ *fill*         0x00000000100089ca        0x2 
  .rodata._ZL24rgb_program_instructions
-                0x00000000100089b4       0x12 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
- *fill*         0x00000000100089c6        0x2 
+                0x00000000100089cc       0x12 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+ *fill*         0x00000000100089de        0x2 
  .rodata._ZL26hsync_program_instructions
-                0x00000000100089c8       0x12 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
- *fill*         0x00000000100089da        0x2 
+                0x00000000100089e0       0x12 CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+ *fill*         0x00000000100089f2        0x2 
  .rodata._ZL26vsync_program_instructions
-                0x00000000100089dc       0x1c CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
+                0x00000000100089f4       0x1c CMakeFiles/cam_vga.dir/cam_vga.cpp.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x00000000100089f8       0x1b CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000010008a13        0x1 
+                0x0000000010008a10       0x1b CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010008a2b        0x1 
  .rodata.user_irq_claim_unused.str1.4
-                0x0000000010008a14       0x1b CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x0000000010008a2f        0x1 
+                0x0000000010008a2c       0x1b CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x0000000010008a47        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010008a30       0x22 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010008a52        0x2 
+                0x0000000010008a48       0x22 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000010008a6a        0x2 
  .rodata.panic.str1.4
-                0x0000000010008a54       0x12 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000010008a66        0x2 
+                0x0000000010008a6c       0x12 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000010008a7e        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010008a68        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010008a80        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x0000000010008a74       0x15 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010008a89        0x3 
+                0x0000000010008a8c       0x15 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010008aa1        0x3 
  .rodata._vsnprintf
-                0x0000000010008a8c      0x1e0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010008c6c        0x4 
+                0x0000000010008aa4      0x1e0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010008c84        0x4 
  .rodata.pow10.5444
-                0x0000000010008c70       0x50 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010008c88       0x50 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x0000000010008cc0       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010008cd8       0x3c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010008cfc        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .rodata.__bi_75
-                0x0000000010008d08        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .rodata.__bi_81
                 0x0000000010008d14        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .rodata.__bi_75
+                0x0000000010008d20        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .rodata.__bi_81
+                0x0000000010008d2c        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.6065
-                0x0000000010008d20        0x2 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010008d22        0x2 
+                0x0000000010008d38        0x2 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010008d3a        0x2 
  .rodata.str1.4
-                0x0000000010008d24       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010008d3c       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_28.4859
-                0x0000000010008d50        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010008d68        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_29.4863
-                0x0000000010008d5c        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010008d74        0x8 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata._resetd_driver
-                0x0000000010008d64       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010008d7c       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010008d7c       0x13 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010008d8f        0x1 
+                0x0000000010008d94       0x13 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x0000000010008da7        0x1 
  .rodata.__bi_118.7207
-                0x0000000010008d90        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010008da8        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010008d9c       0x2a CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010008dc6        0x2 
+                0x0000000010008db4       0x2a CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010008dde        0x2 
  .rodata.usbd_desc_cfg
-                0x0000000010008dc8       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010008de0       0x54 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010008e1c       0x12 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010008e2e        0x2 
+                0x0000000010008e34       0x12 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010008e46        0x2 
  .rodata.usbd_desc_str
-                0x0000000010008e30       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010008e48       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.dcd_rp2040_irq.str1.4
-                0x0000000010008e48       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010008e60       0x14 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata._hw_endpoint_buffer_control_update32.part.0.str1.4
-                0x0000000010008e5c       0x1f CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010008e7b        0x1 
+                0x0000000010008e74       0x1f CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010008e93        0x1 
  .rodata.hw_endpoint_xfer_continue.str1.4
-                0x0000000010008e7c       0x29 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010008e94       0x29 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .rodata.str1.4
-                0x0000000010008ea5       0x29 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010008ebd       0x29 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
                                           0x7 (size before relaxing)
- *fill*         0x0000000010008ea5        0x3 
+ *fill*         0x0000000010008ebd        0x3 
  .rodata.tud_task
-                0x0000000010008ea8       0x8c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010008ec0       0x8c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010008f34       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010008f4c       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata.pio_add_program.str1.4
-                0x0000000010008f4c       0x11 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- *fill*         0x0000000010008f5d        0x3 
+                0x0000000010008f64       0x11 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ *fill*         0x0000000010008f75        0x3 
  .rodata.str1.4
-                0x0000000010008f60       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+                0x0000000010008f78       0x18 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
  .rodata.__bi_35
-                0x0000000010008f78        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+                0x0000000010008f90        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
  .rodata._ZN7ArduCAM7InitCAMEv.str1.4
-                0x0000000010008f84       0x17 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
- *fill*         0x0000000010008f9b        0x1 
+                0x0000000010008f9c       0x17 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+ *fill*         0x0000000010008fb3        0x1 
  .rodata._ZL11OV2640_JPEG
-                0x0000000010008f9c       0x24 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010008fb4       0x24 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL11OV2640_QVGA
-                0x0000000010008fc0      0x308 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010008fd8      0x308 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL13OV2640_YUV422
-                0x00000000100092c8       0x28 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x00000000100092e0       0x28 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL14ov5642_320x240
-                0x00000000100092f0       0x6c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010009308       0x6c CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL16OV2640_JPEG_INIT
-                0x000000001000935c      0x2fc CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010009374      0x2fc CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL18OV5642_320x240_RAW
-                0x0000000010009658       0x14 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010009670       0x14 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL18OV5642_640x480_RAW
-                0x000000001000966c       0x14 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010009684       0x14 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL19OV2640_320x240_JPEG
-                0x0000000010009680       0xa0 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010009698       0xa0 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL19OV5642_1280x960_RAW
-                0x0000000010009720      0x440 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010009738      0x440 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL19OV5642_QVGA_Preview
-                0x0000000010009b60      0x920 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
- .rodata._ZL21OV5642_320x240_RGB565
-                0x000000001000a480       0x24 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x0000000010009b78      0x920 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+ .rodata._ZL21OV5642_640x480_RGB565
+                0x000000001000a498       0x24 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  .rodata._ZL25OV5642_JPEG_Capture_QSXGA
-                0x000000001000a4a4      0x120 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
- .rodata._ZZN7ArduCAM12Arducam_initEvE8__bi_692
-                0x000000001000a5c4        0x8 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
-                0x000000001000a5cc                . = ALIGN (0x4)
+                0x000000001000a4bc      0x120 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+ .rodata._ZZN7ArduCAM12Arducam_initEvE8__bi_693
+                0x000000001000a5dc        0x8 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x000000001000a5e4                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x000000001000a5cc                . = ALIGN (0x4)
+                0x000000001000a5e4                . = ALIGN (0x4)
 
-.rel.dyn        0x000000001000a5cc        0x0
- .rel.iplt      0x000000001000a5cc        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x000000001000a5e4        0x0
+ .rel.iplt      0x000000001000a5e4        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000001000a5cc                __exidx_start = .
+                0x000000001000a5e4                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000001000a5cc                __exidx_end = .
-                0x000000001000a5cc                . = ALIGN (0x4)
-                0x000000001000a5cc                __binary_info_start = .
+                0x000000001000a5e4                __exidx_end = .
+                0x000000001000a5e4                . = ALIGN (0x4)
+                0x000000001000a5e4                __binary_info_start = .
 
-.binary_info    0x000000001000a5cc       0x30
+.binary_info    0x000000001000a5e4       0x30
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x000000001000a5cc        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
-                0x000000001000a5d0        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
-                0x000000001000a5d4        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
-                0x000000001000a5d8        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
-                0x000000001000a5dc        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
-                0x000000001000a5e0        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr81
                 0x000000001000a5e4        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr30
+                0x000000001000a5e8        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr38
+                0x000000001000a5ec        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr44
+                0x000000001000a5f0        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr50
+                0x000000001000a5f4        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr75
+                0x000000001000a5f8        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr81
+                0x000000001000a5fc        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr35
-                0x000000001000a5e8        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
- .binary_info.keep.__bi_ptr692
-                0x000000001000a5ec        0x4 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
+                0x000000001000a600        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
+ .binary_info.keep.__bi_ptr693
+                0x000000001000a604        0x4 CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr28
-                0x000000001000a5f0        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000a608        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr29
-                0x000000001000a5f4        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000a60c        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr118
-                0x000000001000a5f8        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x000000001000a5fc                __binary_info_end = .
-                0x000000001000a5fc                . = ALIGN (0x4)
-                0x000000001000a5fc                __etext = .
+                0x000000001000a610        0x4 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000a614                __binary_info_end = .
+                0x000000001000a614                . = ALIGN (0x4)
+                0x000000001000a614                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2590,7 +2591,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000000       0xc0 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x4a4 load address 0x000000001000a5fc
+.data           0x00000000200000c0      0x4a4 load address 0x000000001000a614
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2708,38 +2709,38 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000564                __data_end__ = .
 
 .tm_clone_table
-                0x0000000020000564        0x0 load address 0x000000001000aaa0
+                0x0000000020000564        0x0 load address 0x000000001000aab8
  .tm_clone_table
                 0x0000000020000564        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000564        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000564        0x0 load address 0x000000001000aaa0
+.igot.plt       0x0000000020000564        0x0 load address 0x000000001000aab8
  .igot.plt      0x0000000020000564        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_ram.magic_location
-                0x0000000020000564        0xc load address 0x000000001000aaa0
+                0x0000000020000564        0xc load address 0x000000001000aab8
  .uninitialized_ram.magic_location
                 0x0000000020000564        0xc CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
 
 .uninitialized_data
-                0x0000000020000570        0x0 load address 0x000000001000aaac
+                0x0000000020000570        0x0 load address 0x000000001000aac4
                 0x0000000020000570                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x000000001000aaac
+.scratch_x      0x0000000020040000        0x0 load address 0x000000001000aac4
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x000000001000aaac                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x000000001000aac4                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x000000001000aaac
+.scratch_y      0x0000000020041000        0x0 load address 0x000000001000aac4
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x000000001000aaac                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x000000001000aac4                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x0000000020000570    0x265a4
                 0x0000000020000570                . = ALIGN (0x4)
@@ -2860,8 +2861,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x000000001000aaac        0x0
-                0x000000001000aaac                __flash_binary_end = .
+.flash_end      0x000000001000aac4        0x0
+                0x000000001000aac4                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2946,7 +2947,7 @@ LOAD CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/pico_boot
 LOAD CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 LOAD CMakeFiles/cam_vga.dir/ArduCAM/ArduCAM.cpp.obj
 LOAD CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-LOAD /tmp/cciWXIXL.o
+LOAD /tmp/ccXtarmA.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3074,7 +3075,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000008b0       0x2c CMakeFiles/cam_vga.dir/home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .ARM.attributes
-                0x00000000000008dc       0x22 /tmp/cciWXIXL.o
+                0x00000000000008dc       0x22 /tmp/ccXtarmA.o
  .ARM.attributes
                 0x00000000000008fe       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

@@ -82,7 +82,8 @@ void ArduCAM::InitCAM()
 				wrSensorReg16_8(0x3818, (reg_val | 0x20) & 0xff);
 
 				//Init and set 320x240;
-				wrSensorRegs16_8(OV5642_320x240_RGB565);
+				// wrSensorRegs16_8(OV5642_320x240_RGB565);
+				wrSensorRegs16_8(OV5642_640x480_RGB565);
 			}
 			else
 			{	
