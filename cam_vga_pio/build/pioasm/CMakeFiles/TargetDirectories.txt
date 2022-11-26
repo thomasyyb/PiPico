@@ -1,0 +1,3 @@
+/home/thomas/PiPico/cam_vga_pio/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/thomas/PiPico/cam_vga_pio/build/pioasm/CMakeFiles/edit_cache.dir
+/home/thomas/PiPico/cam_vga_pio/build/pioasm/CMakeFiles/pioasm.dir

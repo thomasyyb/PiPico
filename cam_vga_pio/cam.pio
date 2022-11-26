@@ -1,0 +1,68 @@
+;
+; Yibo Yang (yy796@cornell.edu)
+; Arducam Mini 5MP Plus OV5642 Driver
+; One pixel per read
+;
+
+; Pin assignments:
+; - SCK is side-set pin 0
+; - MOSI is OUT pin 0
+; - MISO is IN pin 0
+;
+; Autopush and autopull must be enabled, and the serial frame size is set by
+; configuring the push/pull threshold. Shift left/right is fine, but you must
+; justify the data yourself. This is done most conveniently for frame sizes of
+; 8 or 16 bits by using the narrow store replication and narrow load byte
+; picking behaviour of RP2040's IO fabric.
+
+; Program name
+.program cam
+.side_set 1
+
+; Clock phase = 0: data is captured on the posedge edge of each SCK pulse, and
+; transitions on the negedge edge, or some time before the first posedge edge.
+
+    pull block         side 0
+    set pins, 0        side 0       ; pull CS low
+
+bitloop:
+    in pins, 1         side 1       ; data is captured on posedge
+    out x, 1           side 1       ; put data in x register first
+    mov pins, x        side 0       ; data transistion on clk negedge
+    jmp !osre bitloop  side 0
+
+    set pins, 1        side 0       ; pull CS high
+
+% c-sdk {
+#include "hardware/gpio.h"
+static inline void cam_spi_program_init(PIO pio, uint sm, uint offset, uint n_bits,
+        float clkdiv, uint pin_sck, uint pin_cs, uint pin_mosi, uint pin_miso) {
+    pio_sm_config c = cam_program_get_default_config(offset);
+    sm_config_set_out_pins(&c, pin_mosi, 1);
+    sm_config_set_set_pins(&c, pin_cs, 1);
+    sm_config_set_in_pins(&c, pin_miso);
+    sm_config_set_sideset_pins(&c, pin_sck);
+
+    // Only support MSB-first in this example code (shift to left, auto push/pull, threshold=nbits)
+    // Turn off autopush
+    sm_config_set_out_shift(&c, false, false, n_bits);
+    sm_config_set_in_shift(&c, false, true, n_bits);
+    sm_config_set_clkdiv(&c, clkdiv);
+
+    // MOSI, SCK output are low, CS output is high, MISO is input
+    pio_sm_set_pins_with_mask(pio, sm, 0, (1u << pin_sck) | (1u << pin_mosi));
+    pio_sm_set_pins_with_mask(pio, sm, 1, (1u << pin_cs));
+    pio_sm_set_pindirs_with_mask(pio, sm, (1u << pin_sck) | (1u << pin_cs) |(1u << pin_mosi), (1u << pin_sck) | (1u << pin_cs) |(1u << pin_mosi) | (1u << pin_miso));
+    pio_gpio_init(pio, pin_mosi);
+    pio_gpio_init(pio, pin_miso);
+    pio_gpio_init(pio, pin_sck);
+    pio_gpio_init(pio, pin_cs);
+
+    gpio_set_outover(pin_sck, GPIO_OVERRIDE_NORMAL);
+    // SPI is synchronous, so bypass input synchroniser to reduce input delay.
+    hw_set_bits(&pio->input_sync_bypass, 1u << pin_miso);
+
+    pio_sm_init(pio, sm, offset, &c);
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}

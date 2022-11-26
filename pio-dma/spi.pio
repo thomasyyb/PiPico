@@ -42,7 +42,7 @@
 bitloop:
     out x, 1           side 0     ; Stall here on empty (keep SCK deasserted)
     mov pins, x        side 1     ; Output data, assert SCK (mov pins uses OUT mapping)
-    in pins, 1         side 1     ; Input data, deassert SCK
+    in pins, 1         side 1     ; Input data
     jmp !osre bitloop  side 0
     set pins, 1        side 0
 

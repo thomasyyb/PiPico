@@ -1,3 +1,0 @@
-/home/thomas/PiPico/mandelbrot/build/pioasm/CMakeFiles/rebuild_cache.dir
-/home/thomas/PiPico/mandelbrot/build/pioasm/CMakeFiles/edit_cache.dir
-/home/thomas/PiPico/mandelbrot/build/pioasm/CMakeFiles/pioasm.dir
