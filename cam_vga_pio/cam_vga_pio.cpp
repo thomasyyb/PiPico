@@ -129,10 +129,21 @@ void cam_init();
 void VGA_init();
 void test(const pio_spi_inst_t *spi);
 
-#define PIO_PIN_SCK 10
-#define PIO_PIN_CS 11
-#define PIO_PIN_MOSI 12
-#define PIO_PIN_MISO 13
+// #define PIO_PIN_SCK 10
+// #define PIO_PIN_CS 11
+// #define PIO_PIN_MOSI 12
+// #define PIO_PIN_MISO 13
+
+// use the same set as SDK's SPI
+#define PIO_PIN_SCK 2
+#define PIO_PIN_CS 5
+#define PIO_PIN_MOSI 3
+#define PIO_PIN_MISO 4
+
+pio_spi_inst_t spi = {
+            .pio = pio1,
+            .sm = 0
+    };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -149,21 +160,16 @@ int main() {
     VGA_init();
 
     while(1) {
-        uint8_t cameraCommand_last = 0;
-        uint8_t is_header = 0;
-        start_capture = 1;
-        if (start_capture == 1)
-        {
-            myCAM.flush_fifo();
-            myCAM.clear_fifo_flag();
-            //Start capture
-            myCAM.start_capture();
-            start_capture = 0;
-        }
+        // comment the abundant communications
+        // myCAM.flush_fifo();
+        // myCAM.clear_fifo_flag();
+        
+        // implement in PIO assembly
+        // Start capture
+        myCAM.start_capture();
         if (myCAM.get_bit(ARDUCHIP_TRIG, CAP_DONE_MASK))
         {
             printf("ACK CMD CAM Capture Done.\n");
-            // read_fifo_burst(myCAM);
             read_fifo_slow(myCAM);
             //Clear the capture done flag
             myCAM.clear_fifo_flag();
@@ -321,17 +327,15 @@ void cam_init() {
     myCAM.clear_fifo_flag();
     myCAM.write_reg(ARDUCHIP_FRAMES,0x00);
 
+    // PIO SPI overrides the SDK SPI from now on
     // start to add spi.pio init
     /******** SPI configuration*********/
-    pio_spi_inst_t spi = {
-            .pio = pio1,
-            .sm = 0
-    };
 
     // 4 MHz PIO clk @ 125 clk_sys
     // 1 MHz SPI clk
     float clkdiv = 31.25f;
     uint cam_spi_off = pio_add_program(spi.pio, &cam_program);
+    uint cam_spi_off = pio_add_program(spi.pio, &cam_burst_program);
     cam_spi_program_init(spi.pio, spi.sm,
                     cam_spi_off,
                     8,       // 8 bits for one command
@@ -341,24 +345,29 @@ void cam_init() {
                     PIO_PIN_MOSI,
                     PIO_PIN_MISO
     );
-    test(&spi);
+    // for PIO SPI testing
+    // test(&spi);
 }
 
 void test(const pio_spi_inst_t *spi) {
     uint8_t temp = 0x00;
     while(1) {
-        static uint8_t txbuf[20];
+        static uint8_t txbuf = BURST_FIFO_READ;
+        static uint8_t rxbuf[3];
 
-        printf("TX:");
-        for (int i = 0; i < 20; ++i) {
-            txbuf[i] = temp;
-            temp += 0x0f;
-            if(temp >= 0x7f) temp = 0x00;
-            printf(" %02x", (int) txbuf[i]);
-        }
-        printf("\n");
+        // printf("TX:");
+        // for (int i = 0; i < 20; ++i) {
+        //     txbuf[i] = temp;
+        //     temp += 0x0f;
+        //     if(temp >= 0x7f) temp = 0x00;
+        //     printf(" %02x", (int) txbuf[i]);
+        // }
+        // printf("\n");
 
-        pio_spi_write8_blocking(spi, txbuf, 20);
+        // pio_spi_write8_read8_blocking(spi, txbuf, rxbuf, 20);
+        cam_burst_read(spi, &txbuf, rxbuf);
+
+        printf("rxbuf = %x %x %x", rxbuf[0], rxbuf[1], rxbuf[2]);
 
         // sleep_ms(200);
     }
@@ -391,16 +400,23 @@ uint8_t read_fifo_slow(ArduCAM myCAM)
     
     for (int m=0; m<240; m++) {
         for (int n=0; n<320; n++) {
-            char tmp_byte[2];
-            myCAM.CS_LOW();
-            myCAM.set_fifo_burst();  // Set fifo burst mode
-            spi_read_blocking(SPI_PORT, BURST_FIFO_READ, (uint8_t*)tmp_byte, 2);
-            myCAM.CS_HIGH();
+            // char tmp_byte[2];
+            // myCAM.CS_LOW();
+            // myCAM.set_fifo_burst();  // Set fifo burst mode
+            // spi_read_blocking(SPI_PORT, BURST_FIFO_READ, (uint8_t*)tmp_byte, 2);
+            // myCAM.CS_HIGH();
+            static uint8_t txbuf = BURST_FIFO_READ;
+            static uint8_t rxbuf[3];
+            cam_burst_read(&spi, &txbuf, rxbuf);
             char color = 0;
-            color = color | ((( tmp_byte[0] >> 3 ) > 16) << 0);  // red
-            color = color | ((( tmp_byte[0] & 0x03 ) > 1) << 1);  // green low bit
-            color = color | ((( tmp_byte[0] & 0x07 ) > 3) << 2);  // green high bit
-            color = color | ((( tmp_byte[1] & 0x1f ) > 16) << 3);  // blue
+            color = color | ((( rxbuf[1] >> 3 ) > 16) << 0);  // red
+            color = color | ((( rxbuf[1] & 0x03 ) > 1) << 1);  // green low bit
+            color = color | ((( rxbuf[1] & 0x07 ) > 3) << 2);  // green high bit
+            color = color | ((( rxbuf[2] & 0x1f ) > 16) << 3);  // blue
+            // color = color | ((( tmp_byte[0] >> 3 ) > 16) << 0);  // red
+            // color = color | ((( tmp_byte[0] & 0x03 ) > 1) << 1);  // green low bit
+            // color = color | ((( tmp_byte[0] & 0x07 ) > 3) << 2);  // green high bit
+            // color = color | ((( tmp_byte[1] & 0x1f ) > 16) << 3);  // blue
             // 3 blue 2 green_0 1 green_1 0 red
             drawPixel(n, m, color);
         }

@@ -5,6 +5,7 @@
 #include "pico/binary_info.h"
 #include "ov2640_regs.h"
 #include "ov5642_regs.h"
+#include "../pio_spi.h"
 
 ArduCAM::ArduCAM()
 {
@@ -157,16 +158,14 @@ uint8_t ArduCAM::read_fifo(void)
 
 uint8_t ArduCAM::read_reg(uint8_t addr)
 {
-  uint8_t value = 0;
-	addr = addr& 0x7f;
- 	cbi(P_CS, B_CS);
+	uint8_t value = 0;
+	addr = addr & 0x7f;
+	cbi(P_CS, B_CS);
 	spi_write_blocking(SPI_PORT, &addr, 1);
-  spi_read_blocking(SPI_PORT, 0, &value, 1);
-  sbi(P_CS, B_CS);
+	spi_read_blocking(SPI_PORT, 0, &value, 1);
+	sbi(P_CS, B_CS);
 	return value;
 }
-
-
 
 void ArduCAM::write_reg(uint8_t addr, uint8_t data)
 {
@@ -184,9 +183,9 @@ uint32_t ArduCAM::read_fifo_length(void)
 {
 	uint32_t len1,len2,len3,length=0;
 	len1 = read_reg(FIFO_SIZE1);
-  len2 = read_reg(FIFO_SIZE2);
-  len3 = read_reg(FIFO_SIZE3) & 0x7f;
-  length = ((len3 << 16) | (len2 << 8) | len1) & 0x07fffff;
+	len2 = read_reg(FIFO_SIZE2);
+	len3 = read_reg(FIFO_SIZE3) & 0x7f;
+	length = ((len3 << 16) | (len2 << 8) | len1) & 0x07fffff;
 	return length;	
 }
 

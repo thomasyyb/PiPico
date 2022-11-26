@@ -2320,6 +2320,7 @@ CMakeFiles/cam_vga_pio.dir/ArduCAM/ArduCAM.cpp.obj
  /home/thomas/PiPico/cam_vga_pio/ArduCAM/ArduCAM.h
  /home/thomas/PiPico/cam_vga_pio/ArduCAM/ov2640_regs.h
  /home/thomas/PiPico/cam_vga_pio/ArduCAM/ov5642_regs.h
+ /home/thomas/PiPico/cam_vga_pio/pio_spi.h
  /home/thomas/PiPico/pico-sdk/src/boards/include/boards/pico.h
  /home/thomas/PiPico/pico-sdk/src/common/pico_base/include/pico.h
  /home/thomas/PiPico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -2342,6 +2343,7 @@ CMakeFiles/cam_vga_pio.dir/ArduCAM/ArduCAM.cpp.obj
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+ /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
@@ -2352,6 +2354,7 @@ CMakeFiles/cam_vga_pio.dir/ArduCAM/ArduCAM.cpp.obj
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
+ /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
  /home/thomas/PiPico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
@@ -2363,6 +2366,8 @@ CMakeFiles/cam_vga_pio.dir/ArduCAM/ArduCAM.cpp.obj
  /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
  /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
  /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
+ /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h
+ /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h
  /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
  /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
  /home/thomas/PiPico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
@@ -2370,6 +2375,7 @@ CMakeFiles/cam_vga_pio.dir/ArduCAM/ArduCAM.cpp.obj
  /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
  /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
  /home/thomas/PiPico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
+ cam.pio.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
 CMakeFiles/cam_vga_pio.dir/cam_vga_pio.cpp.obj

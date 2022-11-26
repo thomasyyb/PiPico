@@ -259,18 +259,14 @@ int main() {
     while(1) {
         uint8_t cameraCommand_last = 0;
         uint8_t is_header = 0;
-        start_capture = 1;
-        if (start_capture == 1)
-        {
-            myCAM.flush_fifo();
-            myCAM.clear_fifo_flag();
-            //Start capture
-            myCAM.start_capture();
-            start_capture = 0;
-        }
+        // comment the abundant communications
+        // myCAM.flush_fifo();
+        // myCAM.clear_fifo_flag();
+        //Start capture
+        myCAM.start_capture();
         if (myCAM.get_bit(ARDUCHIP_TRIG, CAP_DONE_MASK))
         {
-            printf("ACK CMD CAM Capture Done.\n");
+            // printf("ACK CMD CAM Capture Done.\n");
             // read_fifo_burst(myCAM);
             read_fifo_slow(myCAM);
             //Clear the capture done flag

@@ -90,10 +90,6 @@ cam.pio.h
 pio_spi.h
 /home/thomas/PiPico/cam_vga_pio/pio_spi.h
 
-/home/thomas/PiPico/cam_vga_pio/pio_spi.cpp
-pio_spi.h
-/home/thomas/PiPico/cam_vga_pio/pio_spi.h
-
 /home/thomas/PiPico/cam_vga_pio/pio_spi.h
 hardware/pio.h
 /home/thomas/PiPico/cam_vga_pio/hardware/pio.h

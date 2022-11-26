@@ -26,10 +26,39 @@
     set pins, 0        side 0       ; pull CS low
 
 bitloop:
+    out pins, 1        side 0  [1]  ; data transistion on clk negedge
     in pins, 1         side 1       ; data is captured on posedge
-    out x, 1           side 1       ; put data in x register first
-    mov pins, x        side 0       ; data transistion on clk negedge
-    jmp !osre bitloop  side 0
+    jmp !osre bitloop  side 1
+
+    set pins, 1        side 0       ; pull CS high
+
+; Program name
+.program cam_burst
+.side_set 1
+
+; Clock phase = 0: data is captured on the posedge edge of each SCK pulse, and
+; transitions on the negedge edge, or some time before the first posedge edge.
+
+    pull block         side 0
+    mov y, osr         side 0       ; save the burst command in y register
+    set pins, 0        side 0       ; pull CS low
+
+bitloop1:
+    out pins, 1        side 0  [1]  ; data transistion on clk negedge
+    in pins, 1         side 1       ; data is captured on posedge
+    jmp !osre bitloop1 side 1
+
+    mov osr, y         side 0  [15] ; reload output shift register
+bitloop2:
+    out pins, 1        side 0  [1]  ; data transistion on clk negedge
+    in pins, 1         side 1       ; data is captured on posedge
+    jmp !osre bitloop2 side 1
+
+    mov osr, y         side 0  [15] ; reload output shift register
+bitloop3:
+    out pins, 1        side 0  [1]  ; data transistion on clk negedge
+    in pins, 1         side 1       ; data is captured on posedge
+    jmp !osre bitloop3 side 1
 
     set pins, 1        side 0       ; pull CS high
 
@@ -37,7 +66,8 @@ bitloop:
 #include "hardware/gpio.h"
 static inline void cam_spi_program_init(PIO pio, uint sm, uint offset, uint n_bits,
         float clkdiv, uint pin_sck, uint pin_cs, uint pin_mosi, uint pin_miso) {
-    pio_sm_config c = cam_program_get_default_config(offset);
+    // pio_sm_config c = cam_program_get_default_config(offset);
+    pio_sm_config c = cam_burst_program_get_default_config(offset);
     sm_config_set_out_pins(&c, pin_mosi, 1);
     sm_config_set_set_pins(&c, pin_cs, 1);
     sm_config_set_in_pins(&c, pin_miso);

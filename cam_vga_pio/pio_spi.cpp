@@ -5,6 +5,7 @@
  */
 
 #include "pio_spi.h"
+#include <cstdio>
 
 // Just 8 bit functions provided here. The PIO program supports any frame size
 // 1...32, but the software to do the necessary FIFO shuffling is left as an
@@ -66,3 +67,19 @@ void __time_critical_func(pio_spi_write8_read8_blocking)(const pio_spi_inst_t *s
     }
 }
 
+void __time_critical_func(cam_burst_read)(const pio_spi_inst_t *spi, uint8_t *src, uint8_t *dst) {
+    size_t tx_remain = 1, rx_remain = 3;
+    io_rw_8 *txfifo = (io_rw_8 *) &spi->pio->txf[spi->sm];
+    io_rw_8 *rxfifo = (io_rw_8 *) &spi->pio->rxf[spi->sm];
+    while (tx_remain || rx_remain) {
+        if (tx_remain && !pio_sm_is_tx_fifo_full(spi->pio, spi->sm)) {
+            *txfifo = *src++;
+            --tx_remain;
+        }
+        if (rx_remain && !pio_sm_is_rx_fifo_empty(spi->pio, spi->sm)) {
+            *dst++ = *rxfifo;
+            --rx_remain;
+            printf("%d\n", rx_remain);
+        }
+    }
+}
